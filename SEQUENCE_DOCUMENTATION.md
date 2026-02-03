@@ -241,7 +241,7 @@ Potential extensions to this work:
 1. **Interactive Visualization**: Web-based visualization of sequence flows
 2. **Sequence Validation**: Check if a design properly implements a sequence
 3. **Pattern Composition Analysis**: Formal analysis of how patterns combine
-4. **Domain Transformations**: Apply sequences to social/conceptual/psychic domains
+4. **Domain Transformations**: Apply sequences to social/conceptual/individual domains
 5. **Workflow Integration**: Connect sequences to skill framework workflows
 6. **Cross-Reference Network**: Build graph database of all relationships
 

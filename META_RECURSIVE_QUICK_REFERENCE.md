@@ -16,7 +16,7 @@ The **iterative application of the Pattern Language to itself**, ensuring the re
 
 ```
 Level 0: 1 meta-pattern    (APL0 - the whole)
-Level 1: 6 dimensions      (Archetypal, Template, Physical, Social, Conceptual, Interpersonal)
+Level 1: 6 dimensions      (Archetypal, Template, Physical, Social, Conceptual, Individual)
 Level 2: 36 sequences      (6×6 thematic flows)
 Level 3: 210+ patterns     (Individual solutions)
 Total:   253 patterns
@@ -88,7 +88,7 @@ The 6-dimensional agent structure in `.github/agents/apl0/`:
 ├── @apl0/dim2                      # Physical dimension
 ├── @apl0/dim3                      # Social dimension
 ├── @apl0/dim4                      # Conceptual dimension
-└── @apl0/dim5                      # Interpersonal dimension
+└── @apl0/dim5                      # Individual dimension
 
 Total: 4,836 specialized agents
 ```

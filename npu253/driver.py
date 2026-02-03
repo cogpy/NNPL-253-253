@@ -470,7 +470,7 @@ class PatternCoprocessorDriver:
         """Transform archetypal pattern to specific domain"""
         start_time = time.time()
         
-        if domain not in ["physical", "social", "conceptual", "psychic"]:
+        if domain not in ["physical", "social", "conceptual", "individual"]:
             self._set_error(ERR_INVALID_DOMAIN)
             return None
         

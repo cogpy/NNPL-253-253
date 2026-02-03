@@ -41,7 +41,7 @@ The structure implements a comprehensive organization of 253 patterns across 6 d
 │   ├── dim3/                        # Dimension 3 folder (same structure)
 │   ├── dim4.md                      # Dimension 4 (Conceptual)
 │   ├── dim4/                        # Dimension 4 folder (same structure)
-│   ├── dim5.md                      # Dimension 5 (Interpersonal)
+│   ├── dim5.md                      # Dimension 5 (Individual)
 │   ├── dim5/                        # Dimension 5 folder (same structure)
 ```
 
@@ -59,7 +59,7 @@ Six dimensional perspectives, each containing the full pattern hierarchy:
 3. **dim2 - Physical (P)**: Spatial, material, architectural manifestations
 4. **dim3 - Social (S)**: Organizational, community, institutional expressions
 5. **dim4 - Conceptual (C)**: Knowledge, theoretical, paradigmatic realizations
-6. **dim5 - Interpersonal (I)**: Awareness, consciousness, mental structures
+6. **dim5 - Individual (I)**: Awareness, consciousness, mental structures
 
 ### Categories (Level 2)
 Three categories within each dimension (numbered cat1-cat3, meaning varies by dimension):
@@ -176,4 +176,4 @@ The structure enables exploration of how architectural patterns can be understoo
 - Physical spaces (Physical)
 - Social organizations (Social)
 - Conceptual frameworks (Conceptual)
-- Psychological structures (Interpersonal)
+- Psychological structures (Individual)

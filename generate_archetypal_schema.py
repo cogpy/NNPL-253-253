@@ -188,7 +188,7 @@ def generate_archetypal_schema() -> Dict[str, Any]:
                             "physical": {"type": "string"},
                             "social": {"type": "string"},
                             "conceptual": {"type": "string"},
-                            "psychic": {"type": "string"}
+                            "individual": {"type": "string"}
                         },
                         "description": "Domain-specific mappings for this placeholder"
                     },

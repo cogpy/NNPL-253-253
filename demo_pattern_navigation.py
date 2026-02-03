@@ -70,7 +70,7 @@ def demonstrate_navigation():
         'By Number: Pattern 1 → Pattern 2 → ... → Pattern 253',
         'By Category: Towns → Buildings → Construction',
         'By Sequence: Seq 1 → Seq 2 → ... → Seq 36',
-        'By Domain: Physical → Social → Conceptual → Psychic',
+        'By Domain: Physical → Social → Conceptual → Individual',
         'By Format: HTML → Markdown → JSON → Scheme',
     ]
     for route in routes:

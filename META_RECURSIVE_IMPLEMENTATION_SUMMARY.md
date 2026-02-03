@@ -36,7 +36,7 @@ Implemented in `.github/agents/apl0/`:
 3. **dim2 (Physical)**: Spatial/architectural patterns
 4. **dim3 (Social)**: Organizational/community patterns
 5. **dim4 (Conceptual)**: Knowledge/theoretical patterns
-6. **dim5 (Interpersonal)**: Consciousness/mental patterns
+6. **dim5 (Individual)**: Consciousness/mental patterns
 
 ### 3. Fitness Function
 
@@ -131,7 +131,7 @@ Six metrics measuring optimal cognitive grip:
 - By number: 1-253
 - By category: Towns/Buildings/Construction
 - By sequence: 1-36
-- By domain: Physical/Social/Conceptual/Psychic
+- By domain: Physical/Social/Conceptual/Individual
 - By format: HTML/Markdown/JSON/Scheme
 - By tool: NPU-253/APL/OpenCog/Python
 

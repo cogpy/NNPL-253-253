@@ -21,7 +21,7 @@ The `uia/` directory contains 253 markdown files converted from the UIA "Pattern
 - **Physical**: Physical domain application
 - **Social**: Social domain application  
 - **Conceptual**: Conceptual domain application
-- **Psychic**: Psychological domain application
+- **Individual**: Psychological domain application
 - **Broader/Narrower Patterns**: Hierarchical relationships
 
 Files are named using their original IDs (e.g., `12610010.md` through `12612530.md`).

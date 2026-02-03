@@ -42,7 +42,7 @@ def validate_domain_content():
         'physical': 0,
         'social': 0,
         'conceptual': 0,
-        'psychic': 0
+        'individual': 0
     }
     
     patterns_all_domains = []
@@ -62,7 +62,7 @@ def validate_domain_content():
         
         # Count domains present
         domains_present = []
-        for domain in ['physical', 'social', 'conceptual', 'psychic']:
+        for domain in ['physical', 'social', 'conceptual', 'individual']:
             if domain in content:
                 domain_counts[domain] += 1
                 domains_present.append(domain)

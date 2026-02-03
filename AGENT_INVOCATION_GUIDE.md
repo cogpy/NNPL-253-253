@@ -30,7 +30,7 @@ apl0 (meta-pattern)
 ### 1. Dimension Agents
 **Path Format**: `@apl0/dim{N}` (e.g., `@apl0/dim0`, `@apl0/dim2`)
 
-**Purpose**: Coordinate work across an entire dimension (Archetypal, Template, Physical, Social, Conceptual, or Interpersonal)
+**Purpose**: Coordinate work across an entire dimension (Archetypal, Template, Physical, Social, Conceptual, or Individual)
 
 **When to Invoke**:
 - Work spans multiple categories within the dimension

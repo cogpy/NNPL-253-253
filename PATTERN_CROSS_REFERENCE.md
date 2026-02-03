@@ -18,7 +18,7 @@ This repository contains multiple representations of the same underlying pattern
 ### 2. UIA (Union of International Associations)  
 **Location**: `uia/`, `markdown/uia/`  
 **Count**: 253 patterns  
-**Domain**: Multi-domain (physical, social, conceptual, psychic)  
+**Domain**: Multi-domain (physical, social, conceptual, individual)  
 **Format**: HTML (original), Markdown (converted)  
 **Scale**: Organizational and conceptual structures
 
@@ -91,7 +91,7 @@ Knowledge and theoretical structures:
 Conceptual: Related concepts organized along logical dependencies
 ```
 
-### Psychic Domain (UIA transformation)
+### Individual Domain (UIA transformation)
 Consciousness and awareness patterns:
 - Mental structures
 - Awareness states
@@ -99,7 +99,7 @@ Consciousness and awareness patterns:
 
 **Example**: Pattern 42 transformed
 ```
-Psychic: Habitual thoughts organized along emotional pathways
+Individual: Habitual thoughts organized along emotional pathways
 ```
 
 ## Representation Formats
@@ -152,7 +152,7 @@ Patterns are connected through:
 Connections between APL and UIA:
 - **Subject correspondence**: Same underlying pattern, different domains
 - **Structural similarity**: Analogous organization
-- **Domain transformation**: Physical ↔ Social ↔ Conceptual ↔ Psychic
+- **Domain transformation**: Physical ↔ Social ↔ Conceptual ↔ Individual
 
 ### Through Archetypes
 Archetypal patterns bridge domains:
@@ -216,8 +216,8 @@ print("Social:", pattern['domain_specific_content']['social'])
 # Conceptual domain transformation  
 print("Conceptual:", pattern['domain_specific_content']['conceptual'])
 
-# Psychic domain transformation
-print("Psychic:", pattern['domain_specific_content']['psychic'])
+# Individual domain transformation
+print("Individual:", pattern['domain_specific_content']['individual'])
 ```
 
 ### Example 3: Navigate Pattern Network
@@ -250,7 +250,7 @@ Entry Point → Format → Domain → Pattern
   By Number  HTML     Physical  APL 1
   By Name    Markdown  Social   UIA
   By Theme   JSON     Conceptual Archetypal
-  By Domain  Scheme   Psychic    Instance
+  By Domain  Scheme   Individual    Instance
 ```
 
 ### Pattern 31: PROMENADE  
@@ -311,7 +311,7 @@ The pattern collections form a mosaic where:
 From the combination of representations:
 - **Robustness**: Loss of one format doesn't lose knowledge
 - **Flexibility**: Choose appropriate format for task
-- **Completeness**: Physical + Social + Conceptual + Psychic = Whole
+- **Completeness**: Physical + Social + Conceptual + Individual = Whole
 - **Navigability**: Multiple paths to every pattern
 - **Comprehensibility**: Different cognitive styles accommodated
 
@@ -352,7 +352,7 @@ The diversity of representations achieves **optimal grip** by providing:
 - Physical patterns for spatial understanding
 - Social patterns for organizational insight
 - Conceptual patterns for theoretical clarity
-- Psychic patterns for personal growth
+- Individual patterns for personal growth
 - Multiple formats for different cognitive preferences
 
 Navigate between them freely to gain the deepest understanding of the pattern language as a living whole.

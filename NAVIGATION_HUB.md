@@ -1,5 +1,7 @@
 # Navigation Hub: Pattern Language Explorer
 
+> **Terminology Update**: The domain previously labeled "Psychic" or "Interpersonal" is now called "**Individual**" (consciousness/awareness/mental patterns).
+
 > **Pattern 28: ECCENTRIC NUCLEUS** - Multiple entry points for exploring the pattern language
 
 ## Welcome
@@ -67,7 +69,7 @@ This is your central navigation hub for exploring the Pattern Language repositor
 - Physical domain: Architectural/spatial patterns
 - Social domain: Organizational patterns  
 - Conceptual domain: Knowledge patterns
-- Psychic domain: Consciousness patterns
+- Individual domain: Consciousness patterns
 
 **Start**: `archetypal_patterns.json` → `demo_archetypal_schema.py`
 
@@ -130,7 +132,7 @@ Meta-Pattern (0) → Categories (3) → Sequences (36) → Patterns (253)
 
 ### By Domain
 ```
-Template/Archetypal → Physical → Social → Conceptual → Psychic
+Template/Archetypal → Physical → Social → Conceptual → Individual
         ↓                ↓          ↓          ↓           ↓
    Generic          Spatial    Community   Knowledge    Awareness
 ```
@@ -143,7 +145,7 @@ Create a network where every pattern is reachable through multiple paths:
 - By category (Towns/Buildings/Construction)
 - By sequence (1-36)
 - By relationship (broader/narrower)
-- By domain (physical/social/conceptual/psychic)
+- By domain (physical/social/conceptual/individual)
 
 ### Pattern 120: PATHS AND GOALS  
 Different paths for different goals:

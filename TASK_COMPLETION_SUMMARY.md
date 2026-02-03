@@ -13,7 +13,7 @@ The archetypal patterns in `archetypal_patterns.json` contained:
 
 But were **missing**:
 - ✗ Full domain-specific implementations from UIA source patterns
-- ✗ Detailed content for Physical, Social, Conceptual, and Psychic domains
+- ✗ Detailed content for Physical, Social, Conceptual, and Individual domains
 
 ### What Was Completed
 
@@ -28,7 +28,7 @@ Created and executed `update_archetypal_with_domain_content.py` to:
 - **Physical domain**: 253 patterns (100%)
 - **Social domain**: 67 patterns (26.5%)
 - **Conceptual domain**: 67 patterns (26.5%)
-- **Psychic domain**: 67 patterns (26.5%)
+- **Individual domain**: 67 patterns (26.5%)
 
 Note: Not all UIA patterns have all 4 domains in the source material. The 186 patterns with physical-only content reflect the actual UIA source data.
 

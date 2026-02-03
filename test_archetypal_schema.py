@@ -133,7 +133,7 @@ def test_domain_mappings():
         print(f"✓ All placeholders have domain mappings")
         
         # Check standard domains
-        expected_domains = ["physical", "social", "conceptual", "psychic"]
+        expected_domains = ["physical", "social", "conceptual", "individual"]
         for placeholder, domain_map in mappings.items():
             for domain in expected_domains:
                 if domain in domain_map:

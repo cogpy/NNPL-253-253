@@ -1,5 +1,7 @@
 # Pattern Index: Complete Reference
 
+> **Terminology Update**: The domain previously labeled "Psychic" or "Interpersonal" is now called "**Individual**" to refer to consciousness, awareness, and mental patterns. See note in [README.md](README.md).
+
 > **Pattern 30: ACTIVITY NODES** - Concentrated access to all patterns
 
 ## Quick Access
@@ -508,7 +510,7 @@ Archetypal patterns use placeholders like `{{domains}}` that can be transformed 
 - **Physical**: Spatial, material, architectural
 - **Social**: Organizational, community, institutional
 - **Conceptual**: Knowledge, theoretical, paradigmatic
-- **Psychic**: Awareness, consciousness, mental
+- **Individual**: Awareness, consciousness, mental
 
 [View archetypal patterns](archetypal_patterns.json)
 

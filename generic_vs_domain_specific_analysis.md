@@ -1,6 +1,6 @@
 # Generic vs Domain-Specific Terms Analysis
 
-**Analysis of 253 UIA patterns across 5 domains: Template, Physical, Social, Conceptual, Psychic**
+**Analysis of 253 UIA patterns across 5 domains: Template, Physical, Social, Conceptual, Individual**
 
 ## Executive Summary
 
@@ -29,7 +29,7 @@ These terms form the conceptual backbone that remains consistent across all doma
 - **local**, **degree**, **form**, **order**
 
 ### Conceptual Consistency
-- **modes**, **awareness** (especially in Psychic domain)
+- **modes**, **awareness** (especially in Individual domain)
 - **groups**, **people** (especially in Social/Physical domains)
 
 ## Domain-Specific Vocabulary Patterns
@@ -52,9 +52,9 @@ These terms form the conceptual backbone that remains consistent across all doma
 - **school**, **schools**, **intellectual**, **viewpoints**
 - **approaches**
 
-### Psychic Domain (Psychological/Awareness)
+### Individual Domain (Psychological/Awareness)
 **Internal experience** terms:
-- **perceptions**, **perceptual**, **psychic**, **insight**
+- **perceptions**, **perceptual**, **individual**, **insight**
 - **impressions**, **unstructured**
 
 ### Template Domain
@@ -78,7 +78,7 @@ Structural phrases that maintain consistency across domains:
 | Template | 2,073 | 880 | **7** (most generic) |
 | Social | 1,966 | 912 | **9** |
 | Conceptual | 1,885 | 848 | **9** |
-| Psychic | 1,713 | 765 | **6** |
+| Individual | 1,713 | 765 | **6** |
 
 ## Conclusion
 
@@ -88,6 +88,6 @@ The analysis confirms that UIA patterns follow a **consistent template structure
 2. **Domain-specific terms** adapt the abstract concepts to concrete applications
 3. **Physical domain** shows the greatest vocabulary specialization (architecture, urban planning)
 4. **Template domain** serves as the neutral foundation with minimal domain-specific language
-5. **Social, Conceptual, and Psychic domains** show moderate specialization in their respective areas
+5. **Social, Conceptual, and Individual domains** show moderate specialization in their respective areas
 
 This pattern enables the same underlying organizational principles to be applied across different fields while maintaining domain-appropriate vocabulary and examples.

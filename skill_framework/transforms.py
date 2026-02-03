@@ -5,7 +5,7 @@ Supports transformation of patterns and skills across:
 - Physical domains (spatial, material, architectural)
 - Social domains (organizational, community, institutional)  
 - Conceptual domains (knowledge, theoretical, paradigmatic)
-- Psychic domains (awareness, consciousness, mental)
+- Individual domains (awareness, consciousness, mental)
 """
 
 from enum import Enum
@@ -19,7 +19,7 @@ class Domain(Enum):
     PHYSICAL = "physical"
     SOCIAL = "social"
     CONCEPTUAL = "conceptual"
-    PSYCHIC = "psychic"
+    INDIVIDUAL = "individual"
 
 
 class DomainTransformer:
@@ -68,7 +68,7 @@ class DomainTransformer:
         
         Args:
             pattern_id: ID of the archetypal pattern
-            target_domain: Target domain (physical/social/conceptual/psychic)
+            target_domain: Target domain (physical/social/conceptual/individual)
             
         Returns:
             Transformed pattern dict or None if not found

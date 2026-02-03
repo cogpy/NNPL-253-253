@@ -23,7 +23,7 @@ Created `update_archetypal_with_domain_content.py` script that:
   - **Physical** - Spatial, material, architectural implementations
   - **Social** - Organizational, community, institutional implementations
   - **Conceptual** - Knowledge, theoretical, paradigmatic implementations
-  - **Psychic** - Awareness, consciousness, mental implementations
+  - **Individual** - Awareness, consciousness, mental implementations
 - Adds this content to each pattern in `archetypal_patterns.json`
 
 ### 2. Schema Updates
@@ -64,7 +64,7 @@ Created `validate_domain_content.py` to verify:
 - **Physical domain**: 253 patterns (100%)
 - **Social domain**: 67 patterns (26.5%)
 - **Conceptual domain**: 67 patterns (26.5%)
-- **Psychic domain**: 67 patterns (26.5%)
+- **Individual domain**: 67 patterns (26.5%)
 
 ### Pattern Distribution
 

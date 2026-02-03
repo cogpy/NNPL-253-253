@@ -16,7 +16,7 @@ def load_transformation_mappings():
             'physical': ['region', 'area', 'land', 'environment'],
             'social': ['functional domain', 'community', 'group', 'organization'],
             'conceptual': ['conceptual domain', 'knowledge domain', 'intellectual area'],
-            'psychic': ['mode of awareness', 'consciousness', 'mental state'],
+            'individual': ['mode of awareness', 'consciousness', 'mental state'],
             'network': ['network topology', 'neural space', 'computational domain'],
             'cell': ['cellular environment', 'intracellular space', 'cell membrane boundary'],
             'os': ['system space', 'kernel space', 'user space', 'runtime environment'],
@@ -34,7 +34,7 @@ def load_transformation_mappings():
             'physical': ['building', 'settlement', 'structure', 'development'],
             'social': ['institution', 'group', 'community', 'network'],
             'conceptual': ['conceptual framework', 'knowledge system', 'theory'],
-            'psychic': ['structured awareness', 'organized thinking', 'mental framework'],
+            'individual': ['structured awareness', 'organized thinking', 'mental framework'],
             'network': ['network architecture', 'neural network', 'topology structure'],
             'cell': ['organelle structure', 'cellular organization', 'compartmentalization'],
             'os': ['system architecture', 'kernel structure', 'process hierarchy'],
@@ -52,7 +52,7 @@ def load_transformation_mappings():
             'physical': ['materials', 'rooms', 'spaces', 'buildings'],
             'social': ['members', 'participants', 'roles', 'positions'],
             'conceptual': ['concepts', 'ideas', 'methods', 'approaches'],
-            'psychic': ['perceptions', 'impressions', 'insights', 'experiences'],
+            'individual': ['perceptions', 'impressions', 'insights', 'experiences'],
             'network': ['nodes', 'neurons', 'connections', 'weights'],
             'cell': ['organelles', 'proteins', 'molecules', 'cellular components'],
             'os': ['processes', 'threads', 'system calls', 'drivers'],
@@ -70,7 +70,7 @@ def load_transformation_mappings():
             'physical': ['cities', 'towns', 'infrastructure', 'urban areas'],
             'social': ['institutions', 'organizations', 'systems', 'procedures'],
             'conceptual': ['paradigms', 'schools of thought', 'theoretical systems'],
-            'psychic': ['modes of awareness', 'mental structures', 'psychological patterns'],
+            'individual': ['modes of awareness', 'mental structures', 'psychological patterns'],
             'network': ['network protocols', 'neural architectures', 'layer structures'],
             'cell': ['metabolic pathways', 'cellular systems', 'organellar networks'],
             'os': ['operating systems', 'distributed systems', 'kernel subsystems'],
@@ -88,7 +88,7 @@ def load_transformation_mappings():
             'physical': ['land', 'fertility', 'agriculture', 'natural resources'],
             'social': ['social resources', 'human resources', 'relationships'],
             'conceptual': ['creative resources', 'intellectual resources', 'knowledge'],
-            'psychic': ['psychic resources', 'mental energy', 'awareness'],
+            'individual': ['individual resources', 'mental energy', 'awareness'],
             'network': ['bandwidth', 'computational power', 'training data', 'memory'],
             'cell': ['ATP', 'nutrients', 'genetic material', 'enzymes'],
             'os': ['CPU time', 'memory', 'storage', 'system resources'],
@@ -106,7 +106,7 @@ def load_transformation_mappings():
             'physical': ['roads', 'connections', 'networks', 'proximity'],
             'social': ['communications', 'interactions', 'connections'],
             'conceptual': ['conceptual links', 'logical connections', 'associations'],
-            'psychic': ['associative relationships', 'mental connections', 'psychological links'],
+            'individual': ['associative relationships', 'mental connections', 'psychological links'],
             'network': ['connections', 'synapses', 'data flows', 'network links'],
             'cell': ['molecular interactions', 'signal transduction', 'transport pathways'],
             'os': ['inter-process communication', 'system calls', 'network protocols'],
@@ -200,16 +200,16 @@ def generate_archetypal_pattern(pattern_id, pattern_name, template_content):
 
 This archetypal pattern uses the following domain-specific placeholders:
 
-- `{{{{domains}}}}` → Physical: regions/areas | Social: functional domains/communities | Conceptual: knowledge domains | Psychic: modes of awareness
-- `{{{{frameworks}}}}` → Physical: cities/infrastructure | Social: institutions/systems | Conceptual: paradigms/theories | Psychic: mental structures
-- `{{{{elements}}}}` → Physical: materials/spaces | Social: members/participants | Conceptual: concepts/ideas | Psychic: perceptions/insights
-- `{{{{organization-type}}}}` → Physical: building/development | Social: institution/community | Conceptual: framework/theory | Psychic: structured awareness
-- `{{{{resources}}}}` → Physical: land/agriculture | Social: social resources | Conceptual: creative resources | Psychic: psychic resources
-- `{{{{influence-type}}}}` → Physical: influence | Social: influence | Conceptual: insight | Psychic: influence
-- `{{{{areas}}}}` → Physical: land/regions | Social: functional areas | Conceptual: domains | Psychic: modes of awareness
-- `{{{{positions}}}}` → Physical: central locations | Social: central organizations | Conceptual: central frameworks | Psychic: ordered modes
-- `{{{{patterns}}}}` → Physical: urban environments | Social: organizational patterns | Conceptual: knowledge patterns | Psychic: awareness patterns
-- `{{{{modes}}}}` → Physical: environments | Social: modes of organization | Conceptual: modes of organization | Psychic: modes of awareness
+- `{{{{domains}}}}` → Physical: regions/areas | Social: functional domains/communities | Conceptual: knowledge domains | Individual: modes of awareness
+- `{{{{frameworks}}}}` → Physical: cities/infrastructure | Social: institutions/systems | Conceptual: paradigms/theories | Individual: mental structures
+- `{{{{elements}}}}` → Physical: materials/spaces | Social: members/participants | Conceptual: concepts/ideas | Individual: perceptions/insights
+- `{{{{organization-type}}}}` → Physical: building/development | Social: institution/community | Conceptual: framework/theory | Individual: structured awareness
+- `{{{{resources}}}}` → Physical: land/agriculture | Social: social resources | Conceptual: creative resources | Individual: individual resources
+- `{{{{influence-type}}}}` → Physical: influence | Social: influence | Conceptual: insight | Individual: influence
+- `{{{{areas}}}}` → Physical: land/regions | Social: functional areas | Conceptual: domains | Individual: modes of awareness
+- `{{{{positions}}}}` → Physical: central locations | Social: central organizations | Conceptual: central frameworks | Individual: ordered modes
+- `{{{{patterns}}}}` → Physical: urban environments | Social: organizational patterns | Conceptual: knowledge patterns | Individual: awareness patterns
+- `{{{{modes}}}}` → Physical: environments | Social: modes of organization | Conceptual: modes of organization | Individual: modes of awareness
 
 ## Original Template
 
@@ -264,7 +264,7 @@ This directory contains archetypal patterns generated from UIA templates using t
 
 ## What are Archetypal Patterns?
 
-Archetypal patterns are abstracted versions of the UIA template patterns where domain-specific terms have been replaced with placeholders. This allows the same organizational principle to be applied across different domains (Physical, Social, Conceptual, Psychic) by substituting appropriate domain-specific vocabulary.
+Archetypal patterns are abstracted versions of the UIA template patterns where domain-specific terms have been replaced with placeholders. This allows the same organizational principle to be applied across different domains (Physical, Social, Conceptual, Individual) by substituting appropriate domain-specific vocabulary.
 
 ## Pattern Format
 
@@ -278,7 +278,7 @@ Each archetypal pattern includes:
 
 To use an archetypal pattern:
 
-1. Select the appropriate domain (Physical, Social, Conceptual, or Psychic)
+1. Select the appropriate domain (Physical, Social, Conceptual, or Individual)
 2. Replace each `{{{{placeholder}}}}` with the corresponding domain-specific term
 3. The result will be a domain-specific version of the organizational principle
 

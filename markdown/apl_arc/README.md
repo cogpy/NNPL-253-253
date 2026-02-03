@@ -9,7 +9,7 @@ These are abstracted versions of Christopher Alexander's architectural and urban
 - **Physical**: Architecture, urban planning, spatial design
 - **Social**: Organizations, communities, social systems  
 - **Conceptual**: Knowledge systems, information architecture, conceptual frameworks
-- **Psychic**: Mental structures, consciousness patterns, psychological organization
+- **Individual**: Mental structures, consciousness patterns, psychological organization
 
 ## Document Format
 
@@ -43,7 +43,7 @@ Replace `{{settlements}}` with "organizations", `{{structures}}` with "instituti
 ### Conceptual Domain Application
 Replace `{{settlements}}` with "systems", `{{structures}}` with "concepts", `{{pathways}}` with "associations"
 
-### Psychic Domain Application
+### Individual Domain Application
 Replace `{{settlements}}` with "patterns", `{{structures}}` with "mental forms", `{{pathways}}` with "flows"
 
 ## Transformation Principles

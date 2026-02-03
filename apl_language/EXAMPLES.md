@@ -190,8 +190,8 @@ conceptual ← TransformToConceptual archetypal
 ⍝          unless each one is small and autonomous enough
 ⍝          to be an independent sphere of insight.'
 
-⍝ Transform to psychic domain
-psychic ← TransformToPsychic archetypal
+⍝ Transform to individual domain
+individual ← TransformToIndividual archetypal
 ⍝ Result: 'Balance between modes of awareness will not be achieved
 ⍝          unless each one is small and autonomous enough
 ⍝          to be an independent sphere of influence.'
@@ -218,7 +218,7 @@ PrintDomainTransformations all_domains
 ⍝ --- conceptual ---
 ⍝ Balance between knowledge domains...
 ⍝ 
-⍝ --- psychic ---
+⍝ --- individual ---
 ⍝ Balance between modes of awareness...
 ```
 
@@ -240,7 +240,7 @@ ShowDomainInfo
 ⍝   1. physical - Spatial, material, architectural
 ⍝   2. social - Organizational, community, institutional
 ⍝   3. conceptual - Knowledge, theoretical, paradigmatic
-⍝   4. psychic - Awareness, consciousness, mental
+⍝   4. individual - Awareness, consciousness, mental
 ```
 
 ## Relationship Navigation

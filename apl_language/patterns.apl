@@ -53,7 +53,7 @@ CONSTRUCTION_END ← 253
   ARCHETYPAL_IDS ← 102⍴''
   
   ⍝ Initialize domain mappings
-  DOMAINS ← 'physical' 'social' 'conceptual' 'psychic'
+  DOMAINS ← 'physical' 'social' 'conceptual' 'individual'
   
   ⍝ Set category ranges
   PATTERN_CATEGORIES[TOWNS_START..TOWNS_END] ← CATEGORY_TOWNS

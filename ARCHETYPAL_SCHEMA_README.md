@@ -9,7 +9,7 @@ The Archetypal Pattern Schema provides a formal specification for the 102 archet
 - **Physical** - Spatial, material, architectural domains
 - **Social** - Organizational, community, institutional domains  
 - **Conceptual** - Knowledge, theoretical, paradigmatic domains
-- **Psychic** - Awareness, consciousness, mental domains
+- **Individual** - Awareness, consciousness, mental domains
 
 ## Format
 
@@ -30,7 +30,7 @@ and autonomous enough to be an independent sphere of {{influence-type}}.
 - **Physical**: "Balance between regions/areas will not be achieved..."
 - **Social**: "Balance between functional domains/communities will not be achieved..."
 - **Conceptual**: "Balance between knowledge domains will not be achieved..."
-- **Psychic**: "Balance between modes of awareness will not be achieved..."
+- **Individual**: "Balance between modes of awareness will not be achieved..."
 
 ## Generated Files
 
@@ -52,7 +52,7 @@ JSON Schema definition for archetypal patterns. Defines the structure and valida
   - `physical` - Physical domain implementation (spatial, material, architectural)
   - `social` - Social domain implementation (organizational, community, institutional)
   - `conceptual` - Conceptual domain implementation (knowledge, theoretical, paradigmatic)
-  - `psychic` - Psychic domain implementation (awareness, consciousness, mental)
+  - `individual` - Individual domain implementation (awareness, consciousness, mental)
 - `source_file` - Source markdown file
 - `broader_patterns` - Pattern IDs of broader (more general) patterns
 - `narrower_patterns` - Pattern IDs of narrower (more specific) patterns
@@ -103,7 +103,7 @@ if 'domain_specific_content' in first_pattern:
     physical = first_pattern['domain_specific_content']['physical']
     social = first_pattern['domain_specific_content'].get('social', '')
     conceptual = first_pattern['domain_specific_content'].get('conceptual', '')
-    psychic = first_pattern['domain_specific_content'].get('psychic', '')
+    individual = first_pattern['domain_specific_content'].get('individual', '')
 
 # Or, transform archetypal pattern using domain mappings
 mappings = first_pattern['domain_mappings']
@@ -132,7 +132,7 @@ Comprehensive reference of all placeholders with their domain mappings and usage
         "physical": "regions/areas",
         "social": "functional domains/communities",
         "conceptual": "knowledge domains",
-        "psychic": "modes of awareness"
+        "individual": "modes of awareness"
       },
       "used_in_patterns": [ ... ]
     }
@@ -144,13 +144,13 @@ Comprehensive reference of all placeholders with their domain mappings and usage
 
 The schema defines 10 core placeholders used across patterns:
 
-| Placeholder | Physical | Social | Conceptual | Psychic |
+| Placeholder | Physical | Social | Conceptual | Individual |
 |------------|----------|--------|------------|---------|
 | `{{domains}}` | regions/areas | functional domains/communities | knowledge domains | modes of awareness |
 | `{{frameworks}}` | cities/infrastructure | institutions/systems | paradigms/theories | mental structures |
 | `{{elements}}` | materials/spaces | members/participants | concepts/ideas | perceptions/insights |
 | `{{organization-type}}` | building/development | institution/community | framework/theory | structured awareness |
-| `{{resources}}` | land/agriculture | social resources | creative resources | psychic resources |
+| `{{resources}}` | land/agriculture | social resources | creative resources | individual resources |
 | `{{influence-type}}` | influence | influence | insight | influence |
 | `{{areas}}` | land/regions | functional areas | domains | modes of awareness |
 | `{{positions}}` | central locations | central organizations | central frameworks | ordered modes |
@@ -163,7 +163,7 @@ The schema defines 10 core placeholders used across patterns:
 - **Archetypal Patterns (with templates):** 102
 - **Source Files:** markdown/arc/arc_*.md and markdown/uia/*.md
 - **Unique Placeholders:** 10
-- **Domain Coverage:** Physical (253), Social (67), Conceptual (67), Psychic (67)
+- **Domain Coverage:** Physical (253), Social (67), Conceptual (67), Individual (67)
 - **Patterns with All 4 Domains:** 67
 - **Patterns with Physical Only:** 186
 

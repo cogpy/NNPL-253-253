@@ -46,7 +46,7 @@ Each archetypal variant can be applied across four domains:
 1. **Physical**: Architecture, urban planning, spatial design
 2. **Social**: Organizations, communities, social systems
 3. **Conceptual**: Knowledge systems, information architecture
-4. **Psychic**: Mental structures, consciousness patterns
+4. **Individual**: Mental structures, consciousness patterns
 
 ## Example Transformation
 

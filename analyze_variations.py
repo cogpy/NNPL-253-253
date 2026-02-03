@@ -18,7 +18,7 @@ def extract_domain_sections(content):
         'Physical': r'## Physical\s*\n\n(.*?)(?=\n## |$)',
         'Social': r'## Social\s*\n\n(.*?)(?=\n## |$)',
         'Conceptual': r'## Conceptual\s*\n\n(.*?)(?=\n## |$)',
-        'Psychic': r'## Psychic\s*\n\n(.*?)(?=\n## |$)'
+        'Individual': r'## Individual\s*\n\n(.*?)(?=\n## |$)'
     }
     
     for domain, pattern in section_patterns.items():
@@ -87,7 +87,7 @@ def create_variation_examples_report(examples, output_file):
                 f.write(f"> {example['sections']['Template']}\n\n")
             
             # Then show domain-specific variations
-            for domain in ['Physical', 'Social', 'Conceptual', 'Psychic']:
+            for domain in ['Physical', 'Social', 'Conceptual', 'Individual']:
                 if example['sections'][domain]:
                     f.write(f"### {domain} Domain\n")
                     f.write(f"> {example['sections'][domain]}\n\n")
@@ -101,7 +101,7 @@ def identify_transformation_patterns(examples):
         'Generic → Physical': [],
         'Generic → Social': [],
         'Generic → Conceptual': [],
-        'Generic → Psychic': []
+        'Generic → Individual': []
     }
     
     # Common word mappings observed
@@ -130,12 +130,12 @@ def identify_transformation_patterns(examples):
             'resources': ['creative resources', 'intellectual resources', 'knowledge'],
             'relationships': ['conceptual links', 'logical connections', 'associations']
         },
-        'Psychic': {
+        'Individual': {
             'domain': ['mode of awareness', 'consciousness', 'mental state'],
             'organization': ['structured awareness', 'organized thinking', 'mental framework'],
             'elements': ['perceptions', 'impressions', 'insights', 'experiences'],
             'frameworks': ['modes of awareness', 'mental structures', 'psychological patterns'],
-            'resources': ['psychic resources', 'mental energy', 'awareness'],
+            'resources': ['individual resources', 'mental energy', 'awareness'],
             'relationships': ['associative relationships', 'mental connections', 'psychological links']
         },
         'Network': {

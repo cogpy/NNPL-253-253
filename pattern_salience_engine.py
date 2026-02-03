@@ -26,7 +26,7 @@ class PatternContext:
     current_category: Optional[str] = None
     current_sequence: Optional[str] = None
     keywords: Set[str] = field(default_factory=set)
-    domain: Optional[str] = None  # physical, social, conceptual, psychic
+    domain: Optional[str] = None  # physical, social, conceptual, individual
     scale: Optional[str] = None  # town, building, construction
 
 

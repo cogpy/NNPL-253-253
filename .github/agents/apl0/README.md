@@ -85,7 +85,7 @@ python3 validate_agent_invocation.py
 
 ## Statistics
 
-- **6** dimensions (archetypal, template, physical, social, conceptual, interpersonal)
+- **6** dimensions (archetypal, template, physical, social, conceptual, individual)
 - **18** categories (3 per dimension)
 - **216** sequences (36 per dimension, organized by category)
 - **1,555+** pattern agents
@@ -99,7 +99,7 @@ python3 validate_agent_invocation.py
 - **dim2** - Physical: Spatial, material, architectural patterns
 - **dim3** - Social: Organizational, community, institutional patterns
 - **dim4** - Conceptual: Knowledge, theoretical, paradigmatic patterns
-- **dim5** - Interpersonal: Awareness, consciousness, mental patterns
+- **dim5** - Individual: Awareness, consciousness, mental patterns
 
 ## Key Features
 

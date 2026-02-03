@@ -104,7 +104,7 @@ Patterns connected through:
 - **Categories**: Scale-based groupings
 - **Cross-references**: Explicit links between representations
 - **Hypergraph**: Semantic network in OpenCog
-- **Domains**: Transformation relationships (physical/social/conceptual/psychic)
+- **Domains**: Transformation relationships (physical/social/conceptual/individual)
 
 ### ✅ Contextual Relevance
 Find patterns by:
@@ -253,7 +253,7 @@ Every pattern reachable through multiple routes:
 - By number (1-253)
 - By category (Towns/Buildings/Construction)
 - By sequence (1-36 flows)
-- By domain (Physical/Social/Conceptual/Psychic)
+- By domain (Physical/Social/Conceptual/Individual)
 - By format (HTML/Markdown/JSON/Scheme)
 - By representation (APL/UIA/Archetypal)
 

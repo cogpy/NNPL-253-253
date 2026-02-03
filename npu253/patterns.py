@@ -41,12 +41,12 @@ class ArchetypalPattern:
         Transform archetypal pattern to specific domain.
         
         Args:
-            domain: One of "physical", "social", "conceptual", "psychic"
+            domain: One of "physical", "social", "conceptual", "individual"
             
         Returns:
             Transformed pattern string with placeholders replaced
         """
-        if domain not in ["physical", "social", "conceptual", "psychic"]:
+        if domain not in ["physical", "social", "conceptual", "individual"]:
             raise ValueError(f"Invalid domain: {domain}")
         
         result = self.archetypal_pattern

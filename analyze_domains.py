@@ -3,7 +3,7 @@
 Analyze UIA pattern descriptions to identify generic vs domain-specific vocabulary.
 
 This script parses all UIA markdown files and analyzes the vocabulary used in each
-domain (Template, Physical, Social, Conceptual, Psychic) to identify:
+domain (Template, Physical, Social, Conceptual, Individual) to identify:
 - Generic terms that appear consistently across all domains
 - Domain-specific terms that vary according to the domain context
 """
@@ -35,7 +35,7 @@ def extract_domain_sections(content):
         'Physical': r'## Physical\s*\n\n(.*?)(?=\n## |$)',
         'Social': r'## Social\s*\n\n(.*?)(?=\n## |$)',
         'Conceptual': r'## Conceptual\s*\n\n(.*?)(?=\n## |$)',
-        'Psychic': r'## Psychic\s*\n\n(.*?)(?=\n## |$)'
+        'Individual': r'## Individual\s*\n\n(.*?)(?=\n## |$)'
     }
     
     for domain, pattern in section_patterns.items():
@@ -98,7 +98,7 @@ def analyze_patterns():
         'Physical': Counter(),
         'Social': Counter(),
         'Conceptual': Counter(),
-        'Psychic': Counter()
+        'Individual': Counter()
     }
     
     # Storage for domain phrases
@@ -107,7 +107,7 @@ def analyze_patterns():
         'Physical': Counter(),
         'Social': Counter(),
         'Conceptual': Counter(),
-        'Psychic': Counter()
+        'Individual': Counter()
     }
     
     pattern_count = 0

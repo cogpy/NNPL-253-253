@@ -2,7 +2,7 @@
 """
 Generate archetypal variants of APL organizational documents.
 Converts domain-specific architectural/urban terms to generic placeholders
-that can be applied across different domains (Physical, Social, Conceptual, Psychic).
+that can be applied across different domains (Physical, Social, Conceptual, Individual).
 """
 
 import os
@@ -17,7 +17,7 @@ def load_apl_transformation_mappings():
             'physical': ['regions', 'areas', 'territories', 'zones'],
             'social': ['communities', 'groups', 'networks', 'organizations'],
             'conceptual': ['domains', 'fields', 'disciplines', 'areas'],
-            'psychic': ['states', 'modes', 'realms', 'dimensions'],
+            'individual': ['states', 'modes', 'realms', 'dimensions'],
             'network': ['network segments', 'topologies', 'domains', 'clusters'],
             'cell': ['cellular regions', 'membrane zones', 'organellar territories', 'cellular domains'],
             'os': ['memory regions', 'address spaces', 'system areas', 'kernel zones'],
@@ -36,7 +36,7 @@ def load_apl_transformation_mappings():
             'physical': ['towns', 'cities', 'villages', 'communities'],
             'social': ['organizations', 'institutions', 'groups', 'collectives'],
             'conceptual': ['systems', 'frameworks', 'structures', 'paradigms'],
-            'psychic': ['patterns', 'structures', 'formations', 'configurations'],
+            'individual': ['patterns', 'structures', 'formations', 'configurations'],
             'network': ['network clusters', 'node groups', 'subnet communities', 'protocol families'],
             'cell': ['organelle clusters', 'molecular complexes', 'cellular compartments', 'metabolic centers'],
             'os': ['process groups', 'service clusters', 'system modules', 'kernel subsystems'],
@@ -55,7 +55,7 @@ def load_apl_transformation_mappings():
             'physical': ['buildings', 'structures', 'constructions', 'facilities'],
             'social': ['institutions', 'organizations', 'groups', 'entities'],
             'conceptual': ['concepts', 'ideas', 'frameworks', 'models'],
-            'psychic': ['patterns', 'forms', 'structures', 'configurations'],
+            'individual': ['patterns', 'forms', 'structures', 'configurations'],
             'network': ['nodes', 'routers', 'switches', 'servers'],
             'cell': ['organelles', 'protein complexes', 'molecular machines', 'cellular structures'],
             'os': ['processes', 'services', 'modules', 'drivers'],
@@ -74,7 +74,7 @@ def load_apl_transformation_mappings():
             'physical': ['streets', 'roads', 'paths', 'thoroughfares'],
             'social': ['connections', 'relationships', 'networks', 'communications'],
             'conceptual': ['links', 'associations', 'connections', 'relationships'],
-            'psychic': ['flows', 'currents', 'streams', 'channels'],
+            'individual': ['flows', 'currents', 'streams', 'channels'],
             'network': ['connections', 'links', 'channels', 'pipelines'],
             'cell': ['transport pathways', 'signaling cascades', 'molecular channels', 'membrane passages'],
             'os': ['inter-process communication', 'system buses', 'network protocols', 'data pipelines'],
@@ -93,7 +93,7 @@ def load_apl_transformation_mappings():
             'physical': ['spaces', 'areas', 'places', 'locations'],
             'social': ['environments', 'contexts', 'settings', 'domains'],
             'conceptual': ['realms', 'spheres', 'domains', 'territories'],
-            'psychic': ['states', 'conditions', 'modes', 'dimensions'],
+            'individual': ['states', 'conditions', 'modes', 'dimensions'],
             'network': ['address spaces', 'data spaces', 'memory pools', 'buffer zones'],
             'cell': ['cytoplasm', 'nucleoplasm', 'organellar spaces', 'membrane environments'],
             'os': ['memory spaces', 'virtual environments', 'execution contexts', 'namespace domains'],
@@ -112,7 +112,7 @@ def load_apl_transformation_mappings():
             'physical': ['people', 'inhabitants', 'users', 'occupants'],
             'social': ['members', 'participants', 'actors', 'agents'],
             'conceptual': ['elements', 'components', 'factors', 'variables'],
-            'psychic': ['aspects', 'facets', 'elements', 'dimensions'],
+            'individual': ['aspects', 'facets', 'elements', 'dimensions'],
             'network': ['nodes', 'endpoints', 'devices', 'clients'],
             'cell': ['molecules', 'proteins', 'enzymes', 'cellular actors'],
             'os': ['processes', 'threads', 'users', 'system actors'],
@@ -131,7 +131,7 @@ def load_apl_transformation_mappings():
             'physical': ['activities', 'functions', 'uses', 'operations'],
             'social': ['interactions', 'communications', 'exchanges', 'processes'],
             'conceptual': ['operations', 'processes', 'functions', 'activities'],
-            'psychic': ['experiences', 'processes', 'activities', 'functions'],
+            'individual': ['experiences', 'processes', 'activities', 'functions'],
             'network': ['data flows', 'computations', 'transmissions', 'processing'],
             'cell': ['metabolism', 'protein synthesis', 'cellular processes', 'reactions'],
             'os': ['system calls', 'process execution', 'operations', 'scheduling'],
@@ -186,22 +186,22 @@ def generate_archetypal_variant(title, content, file_type="document"):
 
 This archetypal variant uses the following domain-specific placeholders:
 
-- `{{{{regions}}}}` → Physical: regions/territories | Social: communities/networks | Conceptual: domains/fields | Psychic: states/realms
-- `{{{{settlements}}}}` → Physical: towns/cities | Social: organizations/institutions | Conceptual: systems/frameworks | Psychic: patterns/structures  
-- `{{{{structures}}}}` → Physical: buildings/facilities | Social: institutions/entities | Conceptual: concepts/models | Psychic: patterns/forms
-- `{{{{pathways}}}}` → Physical: streets/roads | Social: connections/networks | Conceptual: links/associations | Psychic: flows/channels
-- `{{{{spaces}}}}` → Physical: spaces/places | Social: environments/contexts | Conceptual: realms/domains | Psychic: states/dimensions
-- `{{{{agents}}}}` → Physical: people/inhabitants | Social: members/participants | Conceptual: elements/components | Psychic: aspects/facets
-- `{{{{processes}}}}` → Physical: activities/functions | Social: interactions/communications | Conceptual: operations/processes | Psychic: experiences/activities
-- `{{{{localities}}}}` → Physical: neighborhoods/communities | Social: groups/collectives | Conceptual: clusters/groupings | Psychic: formations/configurations
-- `{{{{creation}}}}` → Physical: construction/development | Social: formation/establishment | Conceptual: development/creation | Psychic: emergence/formation
-- `{{{{movement}}}}` → Physical: transportation/traffic | Social: communication/flow | Conceptual: information flow/exchange | Psychic: energy flow/circulation
+- `{{{{regions}}}}` → Physical: regions/territories | Social: communities/networks | Conceptual: domains/fields | Individual: states/realms
+- `{{{{settlements}}}}` → Physical: towns/cities | Social: organizations/institutions | Conceptual: systems/frameworks | Individual: patterns/structures  
+- `{{{{structures}}}}` → Physical: buildings/facilities | Social: institutions/entities | Conceptual: concepts/models | Individual: patterns/forms
+- `{{{{pathways}}}}` → Physical: streets/roads | Social: connections/networks | Conceptual: links/associations | Individual: flows/channels
+- `{{{{spaces}}}}` → Physical: spaces/places | Social: environments/contexts | Conceptual: realms/domains | Individual: states/dimensions
+- `{{{{agents}}}}` → Physical: people/inhabitants | Social: members/participants | Conceptual: elements/components | Individual: aspects/facets
+- `{{{{processes}}}}` → Physical: activities/functions | Social: interactions/communications | Conceptual: operations/processes | Individual: experiences/activities
+- `{{{{localities}}}}` → Physical: neighborhoods/communities | Social: groups/collectives | Conceptual: clusters/groupings | Individual: formations/configurations
+- `{{{{creation}}}}` → Physical: construction/development | Social: formation/establishment | Conceptual: development/creation | Individual: emergence/formation
+- `{{{{movement}}}}` → Physical: transportation/traffic | Social: communication/flow | Conceptual: information flow/exchange | Individual: energy flow/circulation
 
 ## Usage Instructions
 
 To use this archetypal variant:
 
-1. **Select your domain**: Physical, Social, Conceptual, or Psychic
+1. **Select your domain**: Physical, Social, Conceptual, or Individual
 2. **Replace placeholders**: Substitute each `{{{{placeholder}}}}` with appropriate domain-specific terms
 3. **Adapt context**: Modify surrounding text as needed to maintain coherence in your chosen domain
 
@@ -323,7 +323,7 @@ These are abstracted versions of Christopher Alexander's architectural and urban
 - **Physical**: Architecture, urban planning, spatial design
 - **Social**: Organizations, communities, social systems  
 - **Conceptual**: Knowledge systems, information architecture, conceptual frameworks
-- **Psychic**: Mental structures, consciousness patterns, psychological organization
+- **Individual**: Mental structures, consciousness patterns, psychological organization
 
 ## Document Format
 
@@ -357,7 +357,7 @@ Replace `{{settlements}}` with "organizations", `{{structures}}` with "instituti
 ### Conceptual Domain Application
 Replace `{{settlements}}` with "systems", `{{structures}}` with "concepts", `{{pathways}}` with "associations"
 
-### Psychic Domain Application
+### Individual Domain Application
 Replace `{{settlements}}` with "patterns", `{{structures}}` with "mental forms", `{{pathways}}` with "flows"
 
 ## Transformation Principles

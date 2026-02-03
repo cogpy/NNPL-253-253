@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Update archetypal patterns with domain-specific detailed content from UIA markdown files.
-This completes missing information by adding Physical, Social, Conceptual, and Psychic
+This completes missing information by adding Physical, Social, Conceptual, and Individual
 domain variations from the source UIA patterns.
 """
 
@@ -38,10 +38,16 @@ def parse_uia_markdown(filepath):
     if conceptual_match:
         sections['conceptual'] = conceptual_match.group(1).strip()
     
-    # Extract Psychic
-    psychic_match = re.search(r'## Psychic\s*\n\s*\n(.+?)(?=\n##|\Z)', content, re.DOTALL)
-    if psychic_match:
-        sections['psychic'] = psychic_match.group(1).strip()
+    # Extract Individual
+    individual_match = re.search(r'## Individual\s*\n\s*\n(.+?)(?=\n##|\Z)', content, re.DOTALL)
+    if individual_match:
+        sections['individual'] = individual_match.group(1).strip()
+    
+    # Also look for legacy "Psychic" heading for backward compatibility
+    if 'individual' not in sections:
+        psychic_match = re.search(r'## Psychic\s*\n\s*\n(.+?)(?=\n##|\Z)', content, re.DOTALL)
+        if psychic_match:
+            sections['individual'] = psychic_match.group(1).strip()
     
     return sections
 
@@ -72,7 +78,7 @@ def update_archetypal_patterns():
         sections = parse_uia_markdown(uia_file)
         
         # Check if we have domain-specific content
-        has_content = any(k in sections for k in ['physical', 'social', 'conceptual', 'psychic'])
+        has_content = any(k in sections for k in ['physical', 'social', 'conceptual', 'individual'])
         
         if has_content:
             # Add domain-specific content to the pattern
@@ -85,8 +91,8 @@ def update_archetypal_patterns():
                 pattern['domain_specific_content']['social'] = sections['social']
             if 'conceptual' in sections:
                 pattern['domain_specific_content']['conceptual'] = sections['conceptual']
-            if 'psychic' in sections:
-                pattern['domain_specific_content']['psychic'] = sections['psychic']
+            if 'individual' in sections:
+                pattern['domain_specific_content']['individual'] = sections['individual']
             
             patterns_with_content += 1
             patterns_updated += 1

@@ -133,7 +133,7 @@ def generate_index():
     index.append("- **Physical**: Spatial, material, architectural")
     index.append("- **Social**: Organizational, community, institutional")
     index.append("- **Conceptual**: Knowledge, theoretical, paradigmatic")
-    index.append("- **Psychic**: Awareness, consciousness, mental")
+    index.append("- **Individual**: Awareness, consciousness, mental")
     index.append("")
     index.append("[View archetypal patterns](archetypal_patterns.json)")
     index.append("")

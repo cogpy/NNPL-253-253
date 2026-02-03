@@ -46,7 +46,7 @@ Tools:
 - [x] Physical domain (spatial/material)
 - [x] Social domain (organizational)
 - [x] Conceptual domain (knowledge/theory)
-- [x] Psychic domain (consciousness)
+- [x] Individual domain (consciousness)
 - [x] Archetypal pattern support
 - [x] Placeholder substitution
 

@@ -35,7 +35,7 @@ including APL patterns, archetypal patterns, and domain transformation structure
 ┌─ Domain ──────────────────────────────────────────────────────────────────┐
 │ The four domains for archetypal pattern transformation                     │
 └───────────────────────────────────────────────────────────────────────────┘
-  Domain ::= Physical | Social | Conceptual | Psychic
+  Domain ::= Physical | Social | Conceptual | Individual
 
 
 ┌─ PlaceholderName ─────────────────────────────────────────────────────────┐
@@ -201,18 +201,18 @@ including APL patterns, archetypal patterns, and domain transformation structure
 
 ┌─ DomainMapping ───────────────────────────────────────────────────────────┐
 │ Maps a placeholder to its domain-specific interpretations across all       │
-│ four domains (Physical, Social, Conceptual, Psychic)                       │
+│ four domains (Physical, Social, Conceptual, Individual)                       │
 └───────────────────────────────────────────────────────────────────────────┘
   DomainMapping
     placeholder: PlaceholderName
     physical: String
     social: String
     conceptual: String
-    psychic: String
+    individual: String
     description: String
   where
     /* All domain mappings must be non-empty */
-    physical ≠ "" ∧ social ≠ "" ∧ conceptual ≠ "" ∧ psychic ≠ ""
+    physical ≠ "" ∧ social ≠ "" ∧ conceptual ≠ "" ∧ individual ≠ ""
     
     /* Description should explain the placeholder's purpose */
     description ≠ ""
@@ -415,7 +415,7 @@ including APL patterns, archetypal patterns, and domain transformation structure
       dm.physical ≠ "" ∧
       dm.social ≠ "" ∧
       dm.conceptual ≠ "" ∧
-      dm.psychic ≠ ""
+      dm.individual ≠ ""
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  END OF DATA MODEL SPECIFICATION

@@ -124,7 +124,7 @@ Same pattern can be viewed from multiple dimensions:
 - **dim2** (Physical): Spatial/material manifestation
 - **dim3** (Social): Organizational/community expression
 - **dim4** (Conceptual): Theoretical/paradigmatic realization
-- **dim5** (Interpersonal): Consciousness/mental structure
+- **dim5** (Individual): Consciousness/mental structure
 
 ### 4. Navigation Support
 

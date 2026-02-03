@@ -46,7 +46,7 @@ Domain transformations:
 - **Physical** - Spatial, material, architectural domains
 - **Social** - Organizational, community, institutional domains
 - **Conceptual** - Knowledge, theoretical, paradigmatic domains
-- **Psychic** - Awareness, consciousness, mental domains
+- **Individual** - Awareness, consciousness, mental domains
 
 ### Key Data Files
 | File | Purpose |
@@ -96,7 +96,7 @@ flowchart LR
     P["Physical"]
     S["Social"]
     C["Conceptual"]
-    Y["Psychic"]
+    Y["Individual"]
     A --> P & S & C & Y
 ```
 
@@ -109,7 +109,7 @@ flowchart LR
 | `pattern-pytorch-implementation.mmd` | PyTorch neural network with tensor embeddings |
 | `pattern-language-hierarchy.mmd` | Three categories: Towns, Buildings, Construction |
 | `pattern-sequences.mmd` | 36 sequences from regional planning to completion |
-| `domain-transformations.mmd` | Physical, Social, Conceptual, Psychic domains |
+| `domain-transformations.mmd` | Physical, Social, Conceptual, Individual domains |
 | `architecture-layers.mmd` | System architecture (Presentation → Foundation) |
 | `pattern-relationships.mmd` | Hierarchy, sequence, dependency, emergence links |
 | `placeholder-system.mmd` | 10 core placeholders and domain mappings |

@@ -72,7 +72,7 @@ def demo_domain_transformations():
     print(f"\nArchetypal Pattern:")
     print(f"  {pattern['archetypal_pattern']}")
     
-    domains = ["physical", "social", "conceptual", "psychic"]
+    domains = ["physical", "social", "conceptual", "individual"]
     
     print(f"\n--- Domain-Specific Versions (via transformation) ---")
     for domain in domains:
@@ -148,7 +148,7 @@ def demo_multi_domain_comparison():
     print(f"\n--- Archetypal Template ---")
     print(f"{pattern['archetypal_pattern']}")
     
-    domains = ["physical", "social", "conceptual", "psychic"]
+    domains = ["physical", "social", "conceptual", "individual"]
     
     print(f"\n--- Domain Transformations ---")
     for domain in domains:

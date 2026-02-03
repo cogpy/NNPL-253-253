@@ -9,7 +9,7 @@ description: "Meta-Pattern 0: A Pattern Language"
 This is the meta-pattern that defines the entire Pattern Language system consisting of 253 interconnected patterns organized across multiple dimensions and scales.
 
 ## Structure
-- **6 Dimensions**: dim0-dim5 (Archetypal, Template, Physical, Social, Conceptual, Interpersonal)
+- **6 Dimensions**: dim0-dim5 (Archetypal, Template, Physical, Social, Conceptual, Individual)
 - **3 Categories**: cat1-cat3 (meaning varies by dimension)
 - **36 Sequences**: Organized flows of related patterns
 - **253 Patterns**: Individual design solutions
@@ -43,7 +43,7 @@ Organizational, community, and institutional expressions of patterns in social s
 ### dim4 - Conceptual (C)
 Knowledge, theoretical, and paradigmatic realizations of patterns in abstract domains.
 
-### dim5 - Interpersonal (I)
+### dim5 - Individual (I)
 Awareness, consciousness, and mental structures that embody patterns in human psychology.
 
 ## Categories

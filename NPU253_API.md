@@ -291,7 +291,7 @@ Transform archetypal pattern to specific domain.
 
 **Parameters:**
 - `pattern_id`: Archetypal pattern ID (e.g., "12610010")
-- `domain`: Target domain ("physical", "social", "conceptual", "psychic")
+- `domain`: Target domain ("physical", "social", "conceptual", "individual")
 
 **Returns:** Transformed pattern string or `None` if error
 
@@ -634,7 +634,7 @@ print(f"Pattern: {pattern.name}")
 print(f"Template: {pattern.archetypal_pattern}\n")
 
 # Transform to all domains
-domains = ["physical", "social", "conceptual", "psychic"]
+domains = ["physical", "social", "conceptual", "individual"]
 for domain in domains:
     transformed = npu.transform_pattern(pattern_id, domain)
     print(f"{domain.upper()}:")

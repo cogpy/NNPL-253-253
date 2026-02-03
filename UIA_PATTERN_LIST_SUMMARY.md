@@ -97,7 +97,7 @@ for p in matches:
 ## Notes
 
 - Pattern names are extracted from the markdown files in `markdown/uia/`
-- These are generalized pattern names that apply across multiple domains (Physical, Social, Conceptual, Psychic)
+- These are generalized pattern names that apply across multiple domains (Physical, Social, Conceptual, Individual)
 - Two patterns contain typos from the original source:
   - Pattern 100: "Arrangement of structures **ot** engender..." (should be "to")
   - Pattern 114: "**Hierachy** of perspectives..." (should be "Hierarchy")

@@ -208,7 +208,7 @@ def demo_conditional_workflow():
 
 
 def demo_domain_transformation():
-    """Demo 4: Domain transformation across physical/social/conceptual/psychic"""
+    """Demo 4: Domain transformation across physical/social/conceptual/individual"""
     print("=" * 70)
     print("DEMO 4: Domain Transformation")
     print("=" * 70)
@@ -230,14 +230,14 @@ def demo_domain_transformation():
                     "physical": "regions/areas",
                     "social": "functional domains/communities",
                     "conceptual": "knowledge domains",
-                    "psychic": "modes of awareness"
+                    "individual": "modes of awareness"
                 }
             },
             "domain_specific_content": {
                 "physical": "Metropolitan regions will not balance until each is autonomous.",
                 "social": "Major networks will not balance until each is autonomous.",
                 "conceptual": "Major paradigms will not balance until each is autonomous.",
-                "psychic": "Major awareness modes will not balance until each is autonomous."
+                "individual": "Major awareness modes will not balance until each is autonomous."
             }
         }
     else:
@@ -254,7 +254,7 @@ def demo_domain_transformation():
     # Transform pattern across domains
     pattern_id = "12610010"
     
-    for domain in [Domain.PHYSICAL, Domain.SOCIAL, Domain.CONCEPTUAL, Domain.PSYCHIC]:
+    for domain in [Domain.PHYSICAL, Domain.SOCIAL, Domain.CONCEPTUAL, Domain.INDIVIDUAL]:
         print(f"{domain.value.upper()} Domain:")
         print("-" * 40)
         

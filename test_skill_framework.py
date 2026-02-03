@@ -318,7 +318,7 @@ class TestDomainTransformer(unittest.TestCase):
                     "physical": "regions",
                     "social": "communities",
                     "conceptual": "paradigms",
-                    "psychic": "awareness modes"
+                    "individual": "awareness modes"
                 }
             },
             "domain_specific_content": {

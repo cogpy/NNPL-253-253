@@ -45,7 +45,7 @@ markdown/uia/
     ├── Physical domain variant
     ├── Social domain variant
     ├── Conceptual domain variant
-    ├── Psychic domain variant
+    ├── Individual domain variant
     ├── Broader Patterns (links)
     └── Narrower Patterns (links)
 
@@ -122,7 +122,7 @@ validate_archetypal_patterns.py
 ### 2. Archetypal Pattern Transformation
 - 103 patterns have archetypal templates with placeholders
 - Placeholders enable domain-specific transformation
-- Four domains: Physical, Social, Conceptual, Psychic
+- Four domains: Physical, Social, Conceptual, Individual
 - Domain mappings preserved for each placeholder
 
 ### 3. Formal Z++ Specification
@@ -149,7 +149,7 @@ validate_archetypal_patterns.py
 - Physical: Window and door frames as places themselves
 - Social: Boundary roles with their own identity
 - Conceptual: Transition concepts substantial enough to study
-- Psychic: Threshold states of awareness
+- Individual: Threshold states of awareness
 
 ### Pattern 12610180 - Network of Redefinitions
 **Status**: Was missing broader patterns  

@@ -65,7 +65,7 @@ cat PARADIGM_COMPARISON_MATRIX.md
 - **Status**: 🔶 Demo available
 
 ### Use Functional (Haskell) When:
-- 📋 Domain transformations (physical→social→conceptual→psychic)
+- 📋 Domain transformations (physical→social→conceptual→individual)
 - 📋 Type-safe pattern composition
 - 📋 Placeholder substitution
 - 📋 Validation

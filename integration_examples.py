@@ -113,7 +113,7 @@ def example_2_archetypal_transformation():
     print("Transforming pattern across domains:")
     print()
     
-    for domain in [Domain.PHYSICAL, Domain.SOCIAL, Domain.CONCEPTUAL, Domain.PSYCHIC]:
+    for domain in [Domain.PHYSICAL, Domain.SOCIAL, Domain.CONCEPTUAL, Domain.INDIVIDUAL]:
         transformed = transformer.transform_pattern(pattern_id, domain)
         
         if transformed:
