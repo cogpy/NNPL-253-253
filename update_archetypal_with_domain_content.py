@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Update archetypal patterns with domain-specific detailed content from UIA markdown files.
-This completes missing information by adding Physical, Social, Conceptual, and Psychic
+This completes missing information by adding Physical, Social, Conceptual, and Individual
 domain variations from the source UIA patterns.
 """
 
@@ -38,10 +38,16 @@ def parse_uia_markdown(filepath):
     if conceptual_match:
         sections['conceptual'] = conceptual_match.group(1).strip()
     
-    # Extract Psychic
-    psychic_match = re.search(r'## Psychic\s*\n\s*\n(.+?)(?=\n##|\Z)', content, re.DOTALL)
-    if psychic_match:
-        sections['psychic'] = psychic_match.group(1).strip()
+    # Extract Individual
+    individual_match = re.search(r'## Individual\s*\n\s*\n(.+?)(?=\n##|\Z)', content, re.DOTALL)
+    if individual_match:
+        sections['individual'] = individual_match.group(1).strip()
+    
+    # Also look for legacy "Psychic" heading for backward compatibility
+    if 'individual' not in sections:
+        psychic_match = re.search(r'## Psychic\s*\n\s*\n(.+?)(?=\n##|\Z)', content, re.DOTALL)
+        if psychic_match:
+            sections['individual'] = psychic_match.group(1).strip()
     
     return sections
 

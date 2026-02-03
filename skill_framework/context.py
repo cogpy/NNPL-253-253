@@ -43,7 +43,7 @@ class SkillContext:
     # Execution history
     execution_history: List[Dict[str, Any]] = field(default_factory=list)
     
-    # Domain context (physical, social, conceptual, psychic)
+    # Domain context (physical, social, conceptual, individual)
     domain: Optional[str] = None
     
     # Metadata about the execution

@@ -26,7 +26,7 @@ Directory Structure:
 │   ├── dim3/                      # Dimension 3 folder
 │   ├── dim4.md                    # Dimension 4 (Conceptual)
 │   ├── dim4/                      # Dimension 4 folder
-│   ├── dim5.md                    # Dimension 5 (Interpersonal)
+│   ├── dim5.md                    # Dimension 5 (Individual)
 │   ├── dim5/                      # Dimension 5 folder
 """
 
@@ -48,7 +48,7 @@ def create_meta_pattern_md(base_path: Path) -> None:
 This is the meta-pattern that defines the entire Pattern Language system consisting of 253 interconnected patterns organized across multiple dimensions and scales.
 
 ## Structure
-- **6 Dimensions**: dim0-dim5 (Archetypal, Template, Physical, Social, Conceptual, Interpersonal)
+- **6 Dimensions**: dim0-dim5 (Archetypal, Template, Physical, Social, Conceptual, Individual)
 - **3 Categories**: cat1-cat3 (meaning varies by dimension)
 - **36 Sequences**: Organized flows of related patterns
 - **253 Patterns**: Individual design solutions
@@ -82,7 +82,7 @@ Organizational, community, and institutional expressions of patterns in social s
 ### dim4 - Conceptual (C)
 Knowledge, theoretical, and paradigmatic realizations of patterns in abstract domains.
 
-### dim5 - Interpersonal (I)
+### dim5 - Individual (I)
 Awareness, consciousness, and mental structures that embody patterns in human psychology.
 
 ## Categories
@@ -276,7 +276,7 @@ def generate_nested_structure():
         ("Physical", "Spatial, material, and architectural patterns in the built environment"),
         ("Social", "Organizational, community, and institutional patterns in social systems"),
         ("Conceptual", "Knowledge, theoretical, and paradigmatic patterns in abstract domains"),
-        ("Interpersonal", "Awareness, consciousness, and mental patterns in human psychology")
+        ("Individual", "Awareness, consciousness, and mental patterns in human psychology")
     ]
     
     # Create each dimension (dim0 through dim5)

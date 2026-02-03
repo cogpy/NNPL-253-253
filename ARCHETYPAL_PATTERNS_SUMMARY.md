@@ -1,5 +1,7 @@
 # Archetypal Pattern Generation Summary
 
+> **Note on Terminology:** The domain previously labeled "Psychic" has been renamed to "**Individual**" to avoid confusion with overloaded terminology. This domain refers to consciousness, awareness, and mental patterns at the individual level.
+
 ## Task Completed Successfully ✅
 
 Generated **102 archetypal patterns** from UIA templates in the requested format:
@@ -21,7 +23,7 @@ Generated **102 archetypal patterns** from UIA templates in the requested format
 - **Physical**: Metropolitan regions ... sphere of influence
 - **Social**: Communities of organizations ... sphere of influence  
 - **Conceptual**: Knowledge domains ... sphere of insight
-- **Psychic**: Modes of awareness ... sphere of influence
+- **Individual**: Modes of awareness ... sphere of influence
 
 ### Regenerative Resource Cultivation Areas (arc_12610040.md)
 **Archetypal**: Those {{areas}} in which {{resources}} can best be regenerated are also those most favourable for the construction of {{frameworks}}.

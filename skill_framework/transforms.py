@@ -19,7 +19,7 @@ class Domain(Enum):
     PHYSICAL = "physical"
     SOCIAL = "social"
     CONCEPTUAL = "conceptual"
-    PSYCHIC = "psychic"
+    INDIVIDUAL = "individual"
 
 
 class DomainTransformer:
@@ -68,7 +68,7 @@ class DomainTransformer:
         
         Args:
             pattern_id: ID of the archetypal pattern
-            target_domain: Target domain (physical/social/conceptual/psychic)
+            target_domain: Target domain (physical/social/conceptual/individual)
             
         Returns:
             Transformed pattern dict or None if not found

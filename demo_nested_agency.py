@@ -21,7 +21,7 @@ def demo_navigation():
     
     # Level 1: Choose dimension
     print("\n2. Choose a Dimension (A, T, P, S, C, I):")
-    dimensions = ["archetypal", "template", "physical", "social", "conceptual", "interpersonal"]
+    dimensions = ["archetypal", "template", "physical", "social", "conceptual", "individual"]
     for i, dim in enumerate(dimensions, 1):
         print(f"   {i}. {dim.title()}: {base}/apl0/{dim}.md")
     

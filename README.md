@@ -1,5 +1,7 @@
 # p235
 
+> **Note on Terminology:** This repository now uses "**individual**" instead of the previously overloaded terms "psychic" or "interpersonal" to refer to the domain of consciousness, awareness, and mental patterns. This change improves clarity and reduces confusion with other meanings of these terms.
+
 This repository contains collections of design patterns and organizational metaphors with formal specifications, including a **virtual hardware implementation (NPU-253)** for accelerated pattern operations, an **APL language implementation** for array-based pattern analysis, a **Skill Framework** for generalized pattern-based workflows, and an **Optimal Grip Implementation** for cognitive-aware pattern exploration.
 
 ## 🎯 META-RECURSIVE CONVERGENCE ACHIEVED
@@ -96,7 +98,7 @@ User → @apl0/dim2 (Physical dimension agent)
 - 🔗 **Cross-Invocation Protocol**: Any agent can invoke any other agent
 - 📋 **Standardized Context Passing**: Consistent format for task delegation
 - 🎯 **Hierarchical Delegation**: Agents delegate to appropriate specialists
-- 🌐 **Multi-Dimensional Views**: Same pattern from physical/social/conceptual/psychic perspectives
+- 🌐 **Multi-Dimensional Views**: Same pattern from physical/social/conceptual/individual perspectives
 - 🧭 **Navigation Support**: Context agents help navigate pattern hierarchy
 
 **Agent Types:**
