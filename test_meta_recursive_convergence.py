@@ -13,7 +13,12 @@ from meta_recursive_convergence import MetaRecursiveAnalyzer, FitnessMetrics
 
 
 class TestBase6Structure(unittest.TestCase):
-    """Test the base-6 hierarchical structure."""
+    """Test the base-6 hierarchical structure.
+    
+    Structure: 1 + 6 + 36 + 210 = 253
+    Note: Level 3 has 210 patterns (not 216=6^3) because
+    the total is constrained to 253 patterns.
+    """
     
     def setUp(self):
         self.analyzer = MetaRecursiveAnalyzer()

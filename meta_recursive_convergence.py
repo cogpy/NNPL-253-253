@@ -9,8 +9,11 @@ The hierarchical structure follows base-6:
 - Level 0: 1 meta-pattern (6^0 = 1)
 - Level 1: 6 dimensions (6^1 = 6)
 - Level 2: 36 sequences (6^2 = 36)
-- Level 3: 216 core patterns (6^3 = 216)
-- Total: 1 + 6 + 36 + 216 = 253
+- Level 3: 210 patterns organized within sequences
+- Total: 1 + 6 + 36 + 210 = 253
+
+Note: Level 3 has 210 patterns rather than 216 (6^3) because the total
+is constrained to 253 patterns by the Pattern Language itself.
 
 Fitness function measures:
 1. Multi-scale perception clarity
@@ -60,7 +63,14 @@ class FitnessMetrics:
 
 
 class MetaRecursiveAnalyzer:
-    """Analyzes and improves the meta-recursive structure."""
+    """Analyzes and improves the meta-recursive structure.
+    
+    The repository follows a base-6 hierarchy with 253 total patterns:
+    - Level 0: 1 meta-pattern
+    - Level 1: 6 dimensions  
+    - Level 2: 36 sequences
+    - Level 3: 210 patterns (253 - 1 - 6 - 36 = 210)
+    """
     
     def __init__(self, repo_root: str = "."):
         self.repo_root = Path(repo_root)
@@ -75,7 +85,15 @@ class MetaRecursiveAnalyzer:
             self.sequence_data = json.load(f)
     
     def verify_base6_structure(self) -> Dict[str, Any]:
-        """Verify the base-6 hierarchical structure."""
+        """Verify the base-6 hierarchical structure.
+        
+        The structure uses powers of 6 for organizational levels:
+        - Level 0: 1 meta-pattern (6^0)
+        - Level 1: 6 dimensions (6^1)
+        - Level 2: 36 sequences (6^2)
+        - Level 3: 210 patterns (not 6^3=216, due to 253 total constraint)
+        - Total: 1 + 6 + 36 + 210 = 253
+        """
         self.load_data()
         
         # Count actual structure

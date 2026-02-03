@@ -26,6 +26,11 @@ Total:   1 + 6 + 36 + 210 = 253 (Complete Pattern Language)
 The structure uses powers of 6 for organizational levels (1, 6, 36) with 253 total patterns
 distributed across these levels, where 210 patterns form the bulk of the detailed content.
 
+**Why 210 instead of 216 (6^3)?** The Pattern Language has exactly 253 patterns total.
+With 1 meta-pattern, 6 dimensions, and 36 sequences accounting for 43 organizational
+elements, the remaining 210 patterns (253 - 43 = 210) form the detailed content level.
+This creates a natural hierarchy while respecting the constraint of 253 total patterns.
+
 ## Fitness Function
 
 The repository structure optimizes for **optimal cognitive grip** through six metrics:
