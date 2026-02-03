@@ -1,13 +1,13 @@
-# Template Pattern List
+# Individual Pattern List
 
-Complete list of 253 Template patterns with pattern numbers and generalized names.
+Complete list of 253 Individual patterns with pattern numbers and generalized names.
 
 Pattern numbers follow the format: `1261{{pattern_num}}0` where pattern_num ranges from 001 to 253.
-Template Patterns follow the format: `T{{pattern_num}}` where pattern_num ranges from 001 to 253.
+Individual Patterns follow the format: `I{{pattern_num}}` where pattern_num ranges from 001 to 253.
 
-| # | Pattern Number | Pattern Name | Template Number | Template Name |
+| # | Pattern Number | Pattern Name | Individual Number | Individual Name |
 |---|----------------|-------------|---|-------------|
-| 1 | 12610010 | Independent domains | T001 |  |
+| 1 | 12610010 | Independent domains | I001 |  |
 | 2 | 12610020 | Distribution of organization |
 | 3 | 12610030 | Interpretation of complementary modes of organization |
 | 4 | 12610040 | Regenerative resource cultivation areas |
