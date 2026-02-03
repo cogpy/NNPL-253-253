@@ -428,7 +428,7 @@
         "physical": "cities/infrastructure",
         "social": "institutions/systems",
         "conceptual": "paradigms/theories",
-        "psychic": "mental structures"
+        "individual": "mental structures"
       },
       "used_in_patterns": [
         {
@@ -847,7 +847,7 @@
         "physical": "materials/spaces",
         "social": "members/participants",
         "conceptual": "concepts/ideas",
-        "psychic": "perceptions/insights"
+        "individual": "perceptions/insights"
       },
       "used_in_patterns": [
         {
@@ -1266,7 +1266,7 @@
         "physical": "building/development",
         "social": "institution/community",
         "conceptual": "framework/theory",
-        "psychic": "structured awareness"
+        "individual": "structured awareness"
       },
       "used_in_patterns": [
         {
@@ -1685,7 +1685,7 @@
         "physical": "land/agriculture",
         "social": "social resources",
         "conceptual": "creative resources",
-        "psychic": "psychic resources"
+        "individual": "psychic resources"
       },
       "used_in_patterns": [
         {
@@ -2104,7 +2104,7 @@
         "physical": "influence",
         "social": "influence",
         "conceptual": "insight",
-        "psychic": "influence"
+        "individual": "influence"
       },
       "used_in_patterns": [
         {
@@ -2523,7 +2523,7 @@
         "physical": "land/regions",
         "social": "functional areas",
         "conceptual": "domains",
-        "psychic": "modes of awareness"
+        "individual": "modes of awareness"
       },
       "used_in_patterns": [
         {
@@ -2942,7 +2942,7 @@
         "physical": "central locations",
         "social": "central organizations",
         "conceptual": "central frameworks",
-        "psychic": "ordered modes"
+        "individual": "ordered modes"
       },
       "used_in_patterns": [
         {
@@ -3361,7 +3361,7 @@
         "physical": "urban environments",
         "social": "organizational patterns",
         "conceptual": "knowledge patterns",
-        "psychic": "awareness patterns"
+        "individual": "awareness patterns"
       },
       "used_in_patterns": [
         {
@@ -3780,7 +3780,7 @@
         "physical": "environments",
         "social": "modes of organization",
         "conceptual": "modes of organization",
-        "psychic": "modes of awareness"
+        "individual": "modes of awareness"
       },
       "used_in_patterns": [
         {

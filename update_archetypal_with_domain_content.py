@@ -78,7 +78,7 @@ def update_archetypal_patterns():
         sections = parse_uia_markdown(uia_file)
         
         # Check if we have domain-specific content
-        has_content = any(k in sections for k in ['physical', 'social', 'conceptual', 'psychic'])
+        has_content = any(k in sections for k in ['physical', 'social', 'conceptual', 'individual'])
         
         if has_content:
             # Add domain-specific content to the pattern
@@ -91,8 +91,8 @@ def update_archetypal_patterns():
                 pattern['domain_specific_content']['social'] = sections['social']
             if 'conceptual' in sections:
                 pattern['domain_specific_content']['conceptual'] = sections['conceptual']
-            if 'psychic' in sections:
-                pattern['domain_specific_content']['psychic'] = sections['psychic']
+            if 'individual' in sections:
+                pattern['domain_specific_content']['individual'] = sections['individual']
             
             patterns_with_content += 1
             patterns_updated += 1
