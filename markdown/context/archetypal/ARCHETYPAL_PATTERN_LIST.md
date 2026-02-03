@@ -1,13 +1,13 @@
-# Individual Pattern List
+# Archetypal Pattern List
 
-Complete list of 253 Individual patterns with pattern numbers and generalized names.
+Complete list of 253 Archetypal patterns with pattern numbers and generalized names.
 
 Pattern numbers follow the format: `1261{{pattern_num}}0` where pattern_num ranges from 001 to 253.
-Individual Patterns follow the format: `I{{pattern_num}}` where pattern_num ranges from 001 to 253.
+Archetypal Patterns follow the format: `A{{pattern_num}}` where pattern_num ranges from 001 to 253.
 
-| # | Pattern Number | Pattern Name | Individual Number | Individual Name |
+| # | Pattern Number | Pattern Name | Archetypal Number | Archetypal Name |
 |---|----------------|-------------|---|-------------|
-| 1 | 12610010 | Independent domains | I001 |  |
+| 1 | 12610010 | Independent domains | A001 |  |
 | 2 | 12610020 | Distribution of organization |
 | 3 | 12610030 | Interpretation of complementary modes of organization |
 | 4 | 12610040 | Regenerative resource cultivation areas |
