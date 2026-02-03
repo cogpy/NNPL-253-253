@@ -30,7 +30,7 @@ category = npu.get_category("towns")        # Get category patterns
 physical = npu.transform_pattern("12610010", "physical")
 social = npu.transform_pattern("12610010", "social")
 conceptual = npu.transform_pattern("12610010", "conceptual")
-psychic = npu.transform_pattern("12610010", "psychic")
+individual = npu.transform_pattern("12610010", "individual")
 ```
 
 ### Diagnostics
@@ -186,7 +186,7 @@ for category in ["towns", "buildings", "construction"]:
 ```python
 # Compare transformations across domains
 pattern_id = "12610010"
-domains = ["physical", "social", "conceptual", "psychic"]
+domains = ["physical", "social", "conceptual", "individual"]
 
 for domain in domains:
     transformed = npu.transform_pattern(pattern_id, domain)

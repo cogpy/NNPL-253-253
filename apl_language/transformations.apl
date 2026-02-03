@@ -10,10 +10,10 @@
 DOMAIN_PHYSICAL ← 'physical'
 DOMAIN_SOCIAL ← 'social'
 DOMAIN_CONCEPTUAL ← 'conceptual'
-DOMAIN_PSYCHIC ← 'psychic'
+DOMAIN_INDIVIDUAL ← 'individual'
 
 ⍝ All domains
-ALL_DOMAINS ← 'physical' 'social' 'conceptual' 'psychic'
+ALL_DOMAINS ← 'physical' 'social' 'conceptual' 'individual'
 
 ⍝ ============================================================================
 ⍝ PLACEHOLDER MAPPINGS
@@ -27,37 +27,37 @@ ALL_DOMAINS ← 'physical' 'social' 'conceptual' 'psychic'
   PLACEHOLDER_DOMAINS_PHYSICAL ← 'regions/areas'
   PLACEHOLDER_DOMAINS_SOCIAL ← 'functional domains/communities'
   PLACEHOLDER_DOMAINS_CONCEPTUAL ← 'knowledge domains'
-  PLACEHOLDER_DOMAINS_PSYCHIC ← 'modes of awareness'
+  PLACEHOLDER_DOMAINS_INDIVIDUAL ← 'modes of awareness'
   
   ⍝ frameworks placeholder
   PLACEHOLDER_FRAMEWORKS_PHYSICAL ← 'cities/infrastructure'
   PLACEHOLDER_FRAMEWORKS_SOCIAL ← 'institutions/systems'
   PLACEHOLDER_FRAMEWORKS_CONCEPTUAL ← 'paradigms/theories'
-  PLACEHOLDER_FRAMEWORKS_PSYCHIC ← 'mental structures'
+  PLACEHOLDER_FRAMEWORKS_INDIVIDUAL ← 'mental structures'
   
   ⍝ elements placeholder
   PLACEHOLDER_ELEMENTS_PHYSICAL ← 'materials/spaces'
   PLACEHOLDER_ELEMENTS_SOCIAL ← 'members/participants'
   PLACEHOLDER_ELEMENTS_CONCEPTUAL ← 'concepts/ideas'
-  PLACEHOLDER_ELEMENTS_PSYCHIC ← 'perceptions/insights'
+  PLACEHOLDER_ELEMENTS_INDIVIDUAL ← 'perceptions/insights'
   
   ⍝ organization-type placeholder
   PLACEHOLDER_ORGTYPE_PHYSICAL ← 'building/development'
   PLACEHOLDER_ORGTYPE_SOCIAL ← 'institution/community'
   PLACEHOLDER_ORGTYPE_CONCEPTUAL ← 'framework/theory'
-  PLACEHOLDER_ORGTYPE_PSYCHIC ← 'structured awareness'
+  PLACEHOLDER_ORGTYPE_INDIVIDUAL ← 'structured awareness'
   
   ⍝ resources placeholder
   PLACEHOLDER_RESOURCES_PHYSICAL ← 'land/agriculture'
   PLACEHOLDER_RESOURCES_SOCIAL ← 'social resources'
   PLACEHOLDER_RESOURCES_CONCEPTUAL ← 'creative resources'
-  PLACEHOLDER_RESOURCES_PSYCHIC ← 'psychic resources'
+  PLACEHOLDER_RESOURCES_INDIVIDUAL ← 'individual resources'
   
   ⍝ influence-type placeholder
   PLACEHOLDER_INFLUENCE_PHYSICAL ← 'influence'
   PLACEHOLDER_INFLUENCE_SOCIAL ← 'influence'
   PLACEHOLDER_INFLUENCE_CONCEPTUAL ← 'insight'
-  PLACEHOLDER_INFLUENCE_PSYCHIC ← 'influence'
+  PLACEHOLDER_INFLUENCE_INDIVIDUAL ← 'influence'
   
   ⍞ ← 'Placeholder mappings initialized',⎕UCS 10
 ∇
@@ -138,15 +138,15 @@ ALL_DOMAINS ← 'physical' 'social' 'conceptual' 'psychic'
   result ← SubstitutePlaceholders pattern mappings
 ∇
 
-∇ result ← TransformToPsychic pattern
-  ⍝ Transform archetypal pattern to psychic domain
+∇ result ← TransformToIndividual pattern
+  ⍝ Transform archetypal pattern to individual domain
   
-  mappings ← ('domains' PLACEHOLDER_DOMAINS_PSYCHIC)
-  mappings ,← ⊂('frameworks' PLACEHOLDER_FRAMEWORKS_PSYCHIC)
-  mappings ,← ⊂('elements' PLACEHOLDER_ELEMENTS_PSYCHIC)
-  mappings ,← ⊂('organization-type' PLACEHOLDER_ORGTYPE_PSYCHIC)
-  mappings ,← ⊂('resources' PLACEHOLDER_RESOURCES_PSYCHIC)
-  mappings ,← ⊂('influence-type' PLACEHOLDER_INFLUENCE_PSYCHIC)
+  mappings ← ('domains' PLACEHOLDER_DOMAINS_INDIVIDUAL)
+  mappings ,← ⊂('frameworks' PLACEHOLDER_FRAMEWORKS_INDIVIDUAL)
+  mappings ,← ⊂('elements' PLACEHOLDER_ELEMENTS_INDIVIDUAL)
+  mappings ,← ⊂('organization-type' PLACEHOLDER_ORGTYPE_INDIVIDUAL)
+  mappings ,← ⊂('resources' PLACEHOLDER_RESOURCES_INDIVIDUAL)
+  mappings ,← ⊂('influence-type' PLACEHOLDER_INFLUENCE_INDIVIDUAL)
   
   result ← SubstitutePlaceholders pattern mappings
 ∇
@@ -160,7 +160,7 @@ ALL_DOMAINS ← 'physical' 'social' 'conceptual' 'psychic'
   →(domain≡DOMAIN_PHYSICAL)/DoPhysical
   →(domain≡DOMAIN_SOCIAL)/DoSocial
   →(domain≡DOMAIN_CONCEPTUAL)/DoConceptual
-  →(domain≡DOMAIN_PSYCHIC)/DoPsychic
+  →(domain≡DOMAIN_INDIVIDUAL)/DoIndividual
   →InvalidDomain
   
 DoPhysical:
@@ -175,8 +175,8 @@ DoConceptual:
   result ← TransformToConceptual pattern
   →0
   
-DoPsychic:
-  result ← TransformToPsychic pattern
+DoIndividual:
+  result ← TransformToIndividual pattern
   →0
   
 InvalidDomain:
@@ -187,19 +187,19 @@ InvalidDomain:
 ⍝ BATCH TRANSFORMATIONS
 ⍝ ============================================================================
 
-∇ results ← ApplyAllDomains pattern;physical;social;conceptual;psychic
+∇ results ← ApplyAllDomains pattern;physical;social;conceptual;individual
   ⍝ Apply all domain transformations to a pattern
   ⍝ Returns nested array of [domain, transformed_text] pairs
   
   physical ← TransformToPhysical pattern
   social ← TransformToSocial pattern
   conceptual ← TransformToConceptual pattern
-  psychic ← TransformToPsychic pattern
+  individual ← TransformToIndividual pattern
   
   results ← (DOMAIN_PHYSICAL physical)
   results ,← ⊂(DOMAIN_SOCIAL social)
   results ,← ⊂(DOMAIN_CONCEPTUAL conceptual)
-  results ,← ⊂(DOMAIN_PSYCHIC psychic)
+  results ,← ⊂(DOMAIN_INDIVIDUAL individual)
 ∇
 
 ∇ results ← TransformArchetypalPatternByID args;id;domain;pattern;archetypal;transformed
@@ -289,7 +289,7 @@ NotFound:
   ⍞ ← '  1. physical - Spatial, material, architectural',⎕UCS 10
   ⍞ ← '  2. social - Organizational, community, institutional',⎕UCS 10
   ⍞ ← '  3. conceptual - Knowledge, theoretical, paradigmatic',⎕UCS 10
-  ⍞ ← '  4. psychic - Awareness, consciousness, mental',⎕UCS 10
+  ⍞ ← '  4. individual - Awareness, consciousness, mental',⎕UCS 10
 ∇
 
 ⍝ ============================================================================

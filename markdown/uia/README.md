@@ -132,7 +132,7 @@ UIA patterns represent the **Social dimension** of the pattern language:
 - **dim2**: Physical (Alexander's APL) → [../apl/](../apl/)
 - **dim3**: Social (UIA patterns) → **This directory**
 - **dim4**: Conceptual (knowledge systems)
-- **dim5**: Interpersonal (consciousness/individual)
+- **dim5**: Individual (consciousness/individual)
 
 See: [../context/README.md](../context/README.md)
 

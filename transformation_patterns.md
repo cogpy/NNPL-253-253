@@ -35,7 +35,7 @@ Common word/concept transformations from generic template to specific domains.
 | resources | creative resources, intellectual resources, knowledge |
 | relationships | conceptual links, logical connections, associations |
 
-## Psychic Transformations
+## Individual Transformations
 
 | Generic Concept | Domain-Specific Terms |
 |-----------------|----------------------|
@@ -43,7 +43,7 @@ Common word/concept transformations from generic template to specific domains.
 | organization | structured awareness, organized thinking, mental framework |
 | elements | perceptions, impressions, insights, experiences |
 | frameworks | modes of awareness, mental structures, psychological patterns |
-| resources | psychic resources, mental energy, awareness |
+| resources | individual resources, mental energy, awareness |
 | relationships | associative relationships, mental connections, psychological links |
 
 ## Network/Neural Network Transformations

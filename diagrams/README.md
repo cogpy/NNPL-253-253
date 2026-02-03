@@ -8,7 +8,7 @@ This directory contains Mermaid (`.mmd`) diagrams visualizing the Pattern Langua
 |---------|-------------|
 | `pattern-language-hierarchy.mmd` | Overall hierarchy showing the three main categories (Towns, Buildings, Construction) |
 | `pattern-sequences.mmd` | The 36 pattern sequences and their flow from Towns through Construction |
-| `domain-transformations.mmd` | How archetypal patterns transform across four domains (Physical, Social, Conceptual, Psychic) |
+| `domain-transformations.mmd` | How archetypal patterns transform across four domains (Physical, Social, Conceptual, Individual) |
 | `architecture-layers.mmd` | System architecture showing Presentation, Integration, Processing, and Foundation layers |
 | `pattern-relationships.mmd` | Types of relationships between patterns (hierarchy, sequence, dependency, emergence) |
 | `placeholder-system.mmd` | The 10 core placeholders and how they map to domain-specific terms |
@@ -45,7 +45,7 @@ npx @mermaid-js/mermaid-cli mmdc -i diagram.mmd -o diagram.svg
 | Blue (#4299e1) | Towns / Physical domain |
 | Green (#48bb78) | Buildings / Social domain |
 | Orange (#ed8936) | Construction / Conceptual domain |
-| Pink (#ed64a6) | Psychic domain |
+| Pink (#ed64a6) | Individual domain |
 | Gray (#718096) | Data/Sources |
 
 ## Pattern Categories

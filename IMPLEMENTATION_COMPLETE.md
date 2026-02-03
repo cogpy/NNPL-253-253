@@ -70,7 +70,7 @@ Complete guide covering:
 Added section on Archetypal Pattern Schema with:
 - Description of archetypal patterns
 - List of generated files
-- Domain types (Physical, Social, Conceptual, Psychic)
+- Domain types (Physical, Social, Conceptual, Individual)
 - Usage commands
 
 ### 6. Verification (`verify_schemas.sh`)
@@ -116,16 +116,16 @@ sphere of influence.
 
 | Placeholder | Count | Domains |
 |------------|-------|---------|
-| domains | 102 | Physical, Social, Conceptual, Psychic |
-| frameworks | 102 | Physical, Social, Conceptual, Psychic |
-| elements | 102 | Physical, Social, Conceptual, Psychic |
-| organization-type | 102 | Physical, Social, Conceptual, Psychic |
-| resources | 102 | Physical, Social, Conceptual, Psychic |
-| influence-type | 102 | Physical, Social, Conceptual, Psychic |
-| areas | 102 | Physical, Social, Conceptual, Psychic |
-| positions | 102 | Physical, Social, Conceptual, Psychic |
-| patterns | 102 | Physical, Social, Conceptual, Psychic |
-| modes | 102 | Physical, Social, Conceptual, Psychic |
+| domains | 102 | Physical, Social, Conceptual, Individual |
+| frameworks | 102 | Physical, Social, Conceptual, Individual |
+| elements | 102 | Physical, Social, Conceptual, Individual |
+| organization-type | 102 | Physical, Social, Conceptual, Individual |
+| resources | 102 | Physical, Social, Conceptual, Individual |
+| influence-type | 102 | Physical, Social, Conceptual, Individual |
+| areas | 102 | Physical, Social, Conceptual, Individual |
+| positions | 102 | Physical, Social, Conceptual, Individual |
+| patterns | 102 | Physical, Social, Conceptual, Individual |
+| modes | 102 | Physical, Social, Conceptual, Individual |
 
 ## Verification Results
 

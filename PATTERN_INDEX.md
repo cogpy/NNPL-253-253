@@ -1,6 +1,6 @@
 # Pattern Index: Complete Reference
 
-> **Terminology Update**: The domain previously labeled "Psychic" or "Interpersonal" is now called "**Individual**" to refer to consciousness, awareness, and mental patterns. See note in [README.md](README.md).
+> **Terminology Update**: The domain previously labeled "Individual" or "Interpersonal" is now called "**Individual**" to refer to consciousness, awareness, and mental patterns. See note in [README.md](README.md).
 
 > **Pattern 30: ACTIVITY NODES** - Concentrated access to all patterns
 

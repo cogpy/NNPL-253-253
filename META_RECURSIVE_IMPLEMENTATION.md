@@ -77,7 +77,7 @@ No single "correct" starting point - users enter where they need to.
 - By number (1-253)
 - By category (Towns/Buildings/Construction)
 - By sequence (1-36)
-- By domain (Physical/Social/Conceptual/Psychic)
+- By domain (Physical/Social/Conceptual/Individual)
 - By format (HTML/Markdown/JSON/Scheme)
 - By representation (APL/UIA/Archetypal)
 
@@ -356,7 +356,7 @@ The patterns describe fundamental principles of organization, connection, and li
 - Information space (this repository)
 - Social space (organizations)
 - Conceptual space (knowledge)
-- Psychic space (consciousness)
+- Individual space (consciousness)
 
 By applying the Pattern Language to itself, we:
 1. **Validate** the patterns (they work on themselves)

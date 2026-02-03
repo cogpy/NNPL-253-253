@@ -133,7 +133,7 @@ def demo_domain_transformation(npu: PatternCoprocessorDriver) -> None:
     print(f"\nArchetypal Pattern: {pattern.name}")
     print(f"Template: {pattern.archetypal_pattern[:100]}...")
     
-    domains = ["physical", "social", "conceptual", "psychic"]
+    domains = ["physical", "social", "conceptual", "individual"]
     
     for domain in domains:
         transformed = npu.transform_pattern(pattern_id, domain)

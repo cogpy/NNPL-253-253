@@ -272,7 +272,7 @@ class TestNPU253Transformation(unittest.TestCase):
         
         pattern_id = list(self.npu.archetypal_patterns.keys())[0]
         
-        domains = ["physical", "social", "conceptual", "psychic"]
+        domains = ["physical", "social", "conceptual", "individual"]
         for domain in domains:
             result = self.npu.transform_pattern(pattern_id, domain)
             self.assertIsNotNone(result)

@@ -117,7 +117,7 @@ graph TB
         PH[Physical Domain]
         SO[Social Domain]
         CN[Conceptual Domain]
-        PS[Psychic Domain]
+        PS[Individual Domain]
     end
     
     subgraph "Placeholder Dictionary"
@@ -128,7 +128,7 @@ graph TB
         TP1[Physical Pattern]
         TP2[Social Pattern]
         TP3[Conceptual Pattern]
-        TP4[Psychic Pattern]
+        TP4[Individual Pattern]
     end
     
     AT --> PD

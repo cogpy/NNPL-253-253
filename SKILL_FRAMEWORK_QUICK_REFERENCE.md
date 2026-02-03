@@ -84,7 +84,7 @@ transformer = DomainTransformer("archetypal_patterns.json")
 physical = transformer.transform_pattern("12610010", Domain.PHYSICAL)
 social = transformer.transform_pattern("12610010", Domain.SOCIAL)
 conceptual = transformer.transform_pattern("12610010", Domain.CONCEPTUAL)
-psychic = transformer.transform_pattern("12610010", Domain.PSYCHIC)
+individual = transformer.transform_pattern("12610010", Domain.PSYCHIC)
 ```
 
 ## Common Patterns
@@ -303,7 +303,7 @@ python3 demo_skill_framework.py
 | **Sequence** | Ordered list of skills |
 | **Workflow** | Algorithmic orchestration of sequences |
 | **Context** | State and data flow between skills |
-| **Domain** | Physical/Social/Conceptual/Psychic |
+| **Domain** | Physical/Social/Conceptual/Individual |
 | **Transformer** | Convert patterns across domains |
 
 ## Execution Modes

@@ -9,7 +9,7 @@ The Skill Framework provides a domain-agnostic system for applying Christopher A
 - **Physical domains** - Spatial, material, architectural
 - **Social domains** - Organizational, community, institutional
 - **Conceptual domains** - Knowledge, theoretical, paradigmatic
-- **Psychic domains** - Awareness, consciousness, mental
+- **Individual domains** - Awareness, consciousness, mental
 
 ## Core Concepts
 
@@ -286,7 +286,7 @@ results = sequence.execute(context)
 # Apply same pattern across domains
 transformer = DomainTransformer("archetypal_patterns.json")
 
-domains = [Domain.PHYSICAL, Domain.SOCIAL, Domain.CONCEPTUAL, Domain.PSYCHIC]
+domains = [Domain.PHYSICAL, Domain.SOCIAL, Domain.CONCEPTUAL, Domain.INDIVIDUAL]
 results = {}
 
 for domain in domains:

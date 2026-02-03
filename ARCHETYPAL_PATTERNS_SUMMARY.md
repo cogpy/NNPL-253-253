@@ -1,6 +1,6 @@
 # Archetypal Pattern Generation Summary
 
-> **Note on Terminology:** The domain previously labeled "Psychic" has been renamed to "**Individual**" to avoid confusion with overloaded terminology. This domain refers to consciousness, awareness, and mental patterns at the individual level.
+> **Note on Terminology:** The domain previously labeled "Individual" has been renamed to "**Individual**" to avoid confusion with overloaded terminology. This domain refers to consciousness, awareness, and mental patterns at the individual level.
 
 ## Task Completed Successfully ✅
 
@@ -32,13 +32,13 @@ Generated **102 archetypal patterns** from UIA templates in the requested format
 - **Physical**: land/agriculture → cities/infrastructure
 - **Social**: functional areas/social resources → institutions/systems
 - **Conceptual**: domains/creative resources → paradigms/theories
-- **Psychic**: modes/psychic resources → mental structures
+- **Individual**: modes/individual resources → mental structures
 
 ## Pattern Structure Analysis
 
 - **Total UIA patterns**: 253
 - **With Template sections**: 102 (all converted to archetypal patterns)
-- **Domain-specific only**: 151 (Physical/Social/Conceptual/Psychic sections only)
+- **Domain-specific only**: 151 (Physical/Social/Conceptual/Individual sections only)
 - **Complete patterns** (5 sections): 66
 
 ## File Locations

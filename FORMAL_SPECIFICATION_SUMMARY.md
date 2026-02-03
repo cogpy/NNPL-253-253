@@ -36,7 +36,7 @@ Total: 2,328 lines of formal specifications
 
 3. **Domain Transformation System** (embedded in archetypal patterns)
    - Placeholder-based transformation engine
-   - 4-domain mappings: Physical, Social, Conceptual, Psychic
+   - 4-domain mappings: Physical, Social, Conceptual, Individual
    - 408 total transformations (102 × 4)
 
 4. **OpenCog Atomese Generator** (`generate_opencog_atomese.py`)
@@ -77,7 +77,7 @@ Template: "Balance between {{domains}} requires {{frameworks}}"
 Physical:    "Balance between regions/areas requires cities/infrastructure"
 Social:      "Balance between communities requires institutions/systems"
 Conceptual:  "Balance between knowledge domains requires paradigms/theories"
-Psychic:     "Balance between modes of awareness requires mental structures"
+Individual:     "Balance between modes of awareness requires mental structures"
 ```
 
 ### Domain Placeholder Dictionary
@@ -88,37 +88,37 @@ Psychic:     "Balance between modes of awareness requires mental structures"
    - Physical: regions/areas
    - Social: functional domains/communities
    - Conceptual: knowledge domains
-   - Psychic: modes of awareness
+   - Individual: modes of awareness
 
 2. **{{frameworks}}** - Structural systems and architectures
    - Physical: cities/infrastructure
    - Social: institutions/systems
    - Conceptual: paradigms/theories
-   - Psychic: mental structures
+   - Individual: mental structures
 
 3. **{{elements}}** - Basic building blocks
    - Physical: materials/spaces
    - Social: members/participants
    - Conceptual: concepts/ideas
-   - Psychic: perceptions/insights
+   - Individual: perceptions/insights
 
 4. **{{resources}}** - Available assets and capabilities
    - Physical: land/agriculture
    - Social: social resources
    - Conceptual: creative resources
-   - Psychic: psychic resources
+   - Individual: individual resources
 
 5. **{{organization-type}}** - Nature of organizing structure
    - Physical: building/development
    - Social: institution/community
    - Conceptual: framework/theory
-   - Psychic: structured awareness
+   - Individual: structured awareness
 
 6. **{{influence-type}}** - Type of effect or impact
    - Physical: influence
    - Social: influence
    - Conceptual: insight
-   - Psychic: influence
+   - Individual: influence
 
 7. **{{areas}}** - Regions or zones of activity
 8. **{{positions}}** - Central or key locations
@@ -134,7 +134,7 @@ Psychic:     "Balance between modes of awareness requires mental structures"
 PatternNumber == 0 .. 253
 AsteriskLevel == 0 .. 2
 CategoryName ::= Towns | Buildings | Construction
-Domain ::= Physical | Social | Conceptual | Psychic
+Domain ::= Physical | Social | Conceptual | Individual
 PlaceholderName ::= domains | frameworks | elements | resources | ...
 ```
 
@@ -297,7 +297,7 @@ Transform to All Domains:
   Physical → 1 transformed pattern
   Social → 1 transformed pattern  
   Conceptual → 1 transformed pattern
-  Psychic → 1 transformed pattern
+  Individual → 1 transformed pattern
   Total: 4 domain variants
 ```
 

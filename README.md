@@ -1,6 +1,6 @@
 # p235
 
-> **Note on Terminology:** This repository now uses "**individual**" instead of the previously overloaded terms "psychic" or "interpersonal" to refer to the domain of consciousness, awareness, and mental patterns. This change improves clarity and reduces confusion with other meanings of these terms.
+> **Note on Terminology:** This repository now uses "**individual**" instead of the previously overloaded terms "individual" or "interpersonal" to refer to the domain of consciousness, awareness, and mental patterns. This change improves clarity and reduces confusion with other meanings of these terms.
 
 This repository contains collections of design patterns and organizational metaphors with formal specifications, including a **virtual hardware implementation (NPU-253)** for accelerated pattern operations, an **APL language implementation** for array-based pattern analysis, a **Skill Framework** for generalized pattern-based workflows, and an **Optimal Grip Implementation** for cognitive-aware pattern exploration.
 
@@ -169,7 +169,7 @@ results = sequence.execute(context)
 ```
 
 **Features:**
-- 🎯 Domain-agnostic skill execution (physical/social/conceptual/psychic)
+- 🎯 Domain-agnostic skill execution (physical/social/conceptual/individual)
 - 🔄 Sequential and conditional workflow modes
 - ✅ Preconditions and postconditions validation
 - 📊 State management with scoped variables
@@ -228,7 +228,7 @@ social = npu.transform_pattern("12610010", "social")
 **Features:**
 - 🔧 Hardware-style MMIO register interface
 - 🎯 253 APL patterns + 253 archetypal patterns
-- 🔄 Domain transformation (physical/social/conceptual/psychic)
+- 🔄 Domain transformation (physical/social/conceptual/individual)
 - ⚡ LRU caching for performance
 - 📊 Telemetry and diagnostics
 - ✅ 34 passing tests
@@ -267,7 +267,7 @@ connected ← GetAllConnectedPatterns 1
 **Features:**
 - ✨ 253 patterns as array-based data structures
 - 🔍 Fast array-based queries and filters
-- 🔄 Domain transformations (physical/social/conceptual/psychic)
+- 🔄 Domain transformations (physical/social/conceptual/individual)
 - 🔗 Relationship navigation and path finding
 - 📊 Pattern sequences and statistics
 - 🎯 ~1,900 lines of APL code
@@ -370,7 +370,7 @@ Archetypal patterns use the format: `"generic {{domain-specific}} generic"` and 
 - **Physical** - Spatial, material, architectural domains
 - **Social** - Organizational, community, institutional domains
 - **Conceptual** - Knowledge, theoretical, paradigmatic domains
-- **Psychic** - Awareness, consciousness, mental domains
+- **Individual** - Awareness, consciousness, mental domains
 
 See `ARCHETYPAL_SCHEMA_README.md` for detailed information about the archetypal pattern schema.
 

@@ -45,7 +45,7 @@ The NPU-253 is a virtual hardware device that implements Christopher Alexander's
 │  Archetypal Pattern Unit (102 Patterns @ 0x50100000)        │
 │  ┌──────────────────────────────────────────────────────┐  │
 │  │ Domain Transformation: Physical/Social/Conceptual/   │  │
-│  │ Psychic Mappings with Placeholder Engine             │  │
+│  │ Individual Mappings with Placeholder Engine             │  │
 │  └──────────────────────────────────────────────────────┘  │
 ├─────────────────────────────────────────────────────────────┤
 │  Telemetry & Diagnostics                                    │
@@ -69,7 +69,7 @@ The NPU-253 is a virtual hardware device that implements Christopher Alexander's
 | 0x18 | REG_QUERY_LEN | 32-bit | Length of query string |
 | 0x1C | REG_RESULT_ADDR | 64-bit | Address for results |
 | 0x24 | REG_RESULT_COUNT | 32-bit | Number of matching patterns |
-| 0x28 | REG_DOMAIN_MODE | 32-bit | Domain transformation mode (0=none, 1=physical, 2=social, 3=conceptual, 4=psychic) |
+| 0x28 | REG_DOMAIN_MODE | 32-bit | Domain transformation mode (0=none, 1=physical, 2=social, 3=conceptual, 4=individual) |
 | 0x2C | REG_SEQUENCE_ID | 32-bit | Pattern sequence ID (1-36) |
 | 0x30 | REG_CATEGORY | 32-bit | Category filter (0=all, 1=towns, 2=buildings, 3=construction) |
 | 0x34 | REG_ERROR_CODE | 32-bit | Last error code |
@@ -400,7 +400,7 @@ else:
 - Physical domain (spatial, material)
 - Social domain (organizational, community)
 - Conceptual domain (knowledge, theoretical)
-- Psychic domain (awareness, consciousness)
+- Individual domain (awareness, consciousness)
 
 ### 4. Performance & Telemetry
 - Query performance tracking

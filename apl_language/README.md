@@ -13,7 +13,7 @@ APL is an array-oriented programming language that excels at operations on multi
 - **Pattern Sequences**: 36 pattern sequences represented as index arrays
 - **Archetypal Patterns**: 102 archetypal patterns with placeholder transformations
 - **Query Operations**: Fast array-based pattern queries
-- **Domain Transformations**: Apply domain-specific transformations (physical/social/conceptual/psychic)
+- **Domain Transformations**: Apply domain-specific transformations (physical/social/conceptual/individual)
 - **Relationship Navigation**: Explore pattern relationships using array indexing
 
 ## Files

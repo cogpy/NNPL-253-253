@@ -51,7 +51,7 @@ APL (A Programming Language) is an array-oriented programming language known for
 - ✅ Physical domain (spatial/material)
 - ✅ Social domain (organizational)
 - ✅ Conceptual domain (knowledge/theory)
-- ✅ Psychic domain (consciousness)
+- ✅ Individual domain (consciousness)
 - ✅ Archetypal pattern support with placeholders
 
 ### 4. Relationship Navigation

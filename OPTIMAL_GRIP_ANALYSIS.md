@@ -134,7 +134,7 @@ TransitiveDep(X, Z) <= (DependsOn(X, Y) & TransitiveDep(Y, Z)).
 - Domain mappings naturally functional
 
 **Cognitive Affordances**:
-- ✅ Domain transformation (physical/social/conceptual/psychic)
+- ✅ Domain transformation (physical/social/conceptual/individual)
 - ✅ Temporal sequencing (function composition)
 
 **Example**:

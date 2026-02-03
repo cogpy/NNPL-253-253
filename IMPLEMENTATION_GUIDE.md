@@ -173,7 +173,7 @@ import Data.Map (Map)
 import qualified Data.Map as Map
 
 -- Domain types
-data Domain = Physical | Social | Conceptual | Psychic
+data Domain = Physical | Social | Conceptual | Individual
   deriving (Show, Eq, Ord)
 
 -- Placeholder with domain-specific mappings
@@ -209,7 +209,7 @@ transformAll :: ArchetypalPattern -> Map Domain Text
 transformAll pattern =
   Map.fromList [(domain, transform pattern domain) | domain <- allDomains]
   where
-    allDomains = [Physical, Social, Conceptual, Psychic]
+    allDomains = [Physical, Social, Conceptual, Individual]
 
 -- Example: Create a pattern
 examplePattern :: ArchetypalPattern
@@ -226,7 +226,7 @@ examplePattern = ArchetypalPattern
           [ (Physical, "regions")
           , (Social, "functional domains")
           , (Conceptual, "knowledge domains")
-          , (Psychic, "modes of awareness")
+          , (Individual, "modes of awareness")
           ]
       }
 
@@ -335,7 +335,7 @@ fromJSON jp = ArchetypalPattern
     parseDomain "physical" = Physical
     parseDomain "social" = Social
     parseDomain "conceptual" = Conceptual
-    parseDomain "psychic" = Psychic
+    parseDomain "individual" = Individual
 
 -- Load patterns from JSON file
 loadPatternsFromJSON :: FilePath -> IO [ArchetypalPattern]

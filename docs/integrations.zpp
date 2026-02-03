@@ -249,14 +249,14 @@ markdown parsing, JSON schema validation, and OpenCog Atomese generation.
       let physical = ExtractDomainValue(line, "Physical") in
       let social = ExtractDomainValue(line, "Social") in
       let conceptual = ExtractDomainValue(line, "Conceptual") in
-      let psychic = ExtractDomainValue(line, "Psychic") in
+      let individual = ExtractDomainValue(line, "Individual") in
       
       mappings! = mappings! ⊕ {ph ↦ DomainMapping where
         .placeholder = ph ∧
         .physical = physical ∧
         .social = social ∧
         .conceptual = conceptual ∧
-        .psychic = psychic ∧
+        .individual = individual ∧
         .description = "Domain mappings for " ⌢ ph}
 
 ═══════════════════════════════════════════════════════════════════════════════
@@ -441,20 +441,20 @@ markdown parsing, JSON schema validation, and OpenCog Atomese generation.
     let physical_node = ConceptNode(pattern_id? ⌢ "-Physical")
     let social_node = ConceptNode(pattern_id? ⌢ "-Social")
     let conceptual_node = ConceptNode(pattern_id? ⌢ "-Conceptual")
-    let psychic_node = ConceptNode(pattern_id? ⌢ "-Psychic")
+    let individual_node = ConceptNode(pattern_id? ⌢ "-Individual")
     
     /* Create inheritance links */
     let physical_link = InheritanceLink(physical_node, archetypal_node)
     let social_link = InheritanceLink(social_node, archetypal_node)
     let conceptual_link = InheritanceLink(conceptual_node, archetypal_node)
-    let psychic_link = InheritanceLink(psychic_node, archetypal_node)
+    let individual_link = InheritanceLink(individual_node, archetypal_node)
     
     /* Generate atoms */
     atoms! = ⟨archetypal_node, 
               physical_node, physical_link,
               social_node, social_link,
               conceptual_node, conceptual_link,
-              psychic_node, psychic_link⟩
+              individual_node, individual_link⟩
     
     /* Convert to Scheme */
     scheme_code! = ConvertToScheme(atoms!)

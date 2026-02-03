@@ -18,7 +18,7 @@ Examples showing how the same organizational pattern concept is expressed differ
 ### Conceptual Domain
 > Major paradigms, networks of concepts or schools of thought will not come to functional balance until each one is sufficiently well-defined and autonomous to be an independent sphere of insight.
 
-### Psychic Domain
+### Individual Domain
 > Major modes of awareness will not come to functional balance within the individual until each one is sufficiently well-defined and autonomous to be an independent sphere of influence.
 
 ---
@@ -39,7 +39,7 @@ Examples showing how the same organizational pattern concept is expressed differ
 ### Conceptual Domain
 > If a conceptual domain is characterized by small networks or groups of concepts to too great an extent, more integrated and comprehensive forms of organization cannot emerge. But if such a domain is characterized by extensively organized networks of concepts to too great an extent, such a degree of organization will prove detrimental to the integrity of the conceptual domain. Bodies of knowledge of different degrees of organization should be distributed evenly throughout the domain.
 
-### Psychic Domain
+### Individual Domain
 > If a mode of awareness is characterized by too many aspects of limited degree of organization, more integrated and comprehensive forms of awareness cannot emerge. But if such a mode of awareness is characterized by too limited a number of highly organized aspects, then this manner of organization will prove detrimental to the integrity of that mode of awareness.
 
 ---
@@ -60,7 +60,7 @@ Examples showing how the same organizational pattern concept is expressed differ
 ### Conceptual Domain
 > The proliferation of totally organized bodies of knowledge and conceptual methods ignores the existence and emergence of underdefined concepts and forms of integration with the consequence that conceptual development is severely inhibited. But the degree of integration of such established bodies of knowledge is also valuable and potent. A compromise can be achieved by ensuring the interpenetration of formal and informal modes of conceptual organization.
 
-### Psychic Domain
+### Individual Domain
 > The proliferation of highly structured modes of awareness ignores the existence and emergence of underdefined modes of awareness and forms of integration, with the consequence that personal development is severely inhibited. But the degree of integration of such established modes of awareness is also valuable and potent. A compromise can be achieved by ensuring the interpenetration of structured and unstructured modes of awareness.
 
 ---
@@ -81,8 +81,8 @@ Examples showing how the same organizational pattern concept is expressed differ
 ### Conceptual Domain
 > The domains most favourable to regeneration of creative resources are also those in which concepts can most easily be ordered into conceptual frameworks. The availability of such areas is however limited and once denatured by the establishment of such frameworks their function in regenerating creative resources cannot easily be recovered. Such creative domains should therefore be protected from attempts at conceptual organization.
 
-### Psychic Domain
-> The modes of awareness most favourable to regeneration of psychic resources are also those which lend themselves most easily to being structured. The availability of such modes is however limited and once denatured by being structured in this way, their regenerative function cannot easily be recovered. Such modes of awareness should therefore be protected from efforts to structure them.
+### Individual Domain
+> The modes of awareness most favourable to regeneration of individual resources are also those which lend themselves most easily to being structured. The availability of such modes is however limited and once denatured by being structured in this way, their regenerative function cannot easily be recovered. Such modes of awareness should therefore be protected from efforts to structure them.
 
 ---
 
@@ -102,7 +102,7 @@ Examples showing how the same organizational pattern concept is expressed differ
 ### Conceptual Domain
 > There is advantage in major conceptual frameworks as well as in minimally organized conceptual processes. In order to reconcile these mutually incompatible forms of conceptual organization a loose network of relationships is necessary which links both the limited number of centrally organized frameworks to the minimally organized conceptual processes and ensures that the latter provide protection against progressive formalization.
 
-### Psychic Domain
+### Individual Domain
 > There is advantage in highly ordered modes of awareness as well as in minimally ordered modes of awareness. In order to reconcile these mutually incompatible modes a loose network of associative relationships is necessary which links both the limited number of ordered modes to the minimally ordered modes and ensures that the latter provide protection against loss of the former.
 
 ---

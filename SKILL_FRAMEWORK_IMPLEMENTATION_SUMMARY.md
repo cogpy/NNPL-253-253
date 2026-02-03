@@ -46,7 +46,7 @@ The framework consists of 5 main components:
   - Physical (spatial, material, architectural)
   - Social (organizational, community, institutional)
   - Conceptual (knowledge, theoretical, paradigmatic)
-  - Psychic (awareness, consciousness, mental)
+  - Individual (awareness, consciousness, mental)
 - Placeholder substitution
 
 ## Implementation Details
@@ -297,7 +297,7 @@ The Skill Framework successfully implements a generalized pattern-based workflow
 - ✅ Integrates with existing pattern language data
 - ✅ Provides comprehensive testing and documentation
 
-The framework is production-ready and can be used to build complex pattern-based applications across physical, social, conceptual, and psychic domains.
+The framework is production-ready and can be used to build complex pattern-based applications across physical, social, conceptual, and individual domains.
 
 ## Files Modified/Created
 
@@ -326,7 +326,7 @@ The framework is production-ready and can be used to build complex pattern-based
 - **Lines of Documentation:** ~1,600
 - **Tests:** 17 (100% passing)
 - **Examples:** 10 (5 demos + 5 integrations)
-- **Supported Domains:** 4 (Physical, Social, Conceptual, Psychic)
+- **Supported Domains:** 4 (Physical, Social, Conceptual, Individual)
 - **Execution Modes:** 2 (Sequential, Conditional) + 1 planned (Parallel)
 
 ## Repository Structure After Implementation

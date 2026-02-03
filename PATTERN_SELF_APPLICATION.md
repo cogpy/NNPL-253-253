@@ -17,7 +17,7 @@ The repository follows a **base-6 hierarchical organization** derived from:
 
 ```
 Level 0: 6^0 = 1     (Meta-pattern: The whole Pattern Language)
-Level 1: 6^1 = 6     (Dimensions: Archetypal, Template, Physical, Social, Conceptual, Interpersonal)
+Level 1: 6^1 = 6     (Dimensions: Archetypal, Template, Physical, Social, Conceptual, Individual)
 Level 2: 6^2 = 36    (Sequences: Thematic flows of related patterns)
 Level 3: 210 patterns (Organized within sequences)
 Total:   1 + 6 + 36 + 210 = 253 (Complete Pattern Language)
@@ -64,7 +64,7 @@ Users can navigate from highest level to lowest without cognitive overload.
 - **PATTERN_INDEX.md**: Comprehensive catalog by number, category, sequence
 - **NAVIGATION_HUB.md**: Context-aware entry points
 - **SEQUENCE_NAVIGATION.md**: Thematic pathways
-- **Domain-specific access**: Physical/Social/Conceptual/Psychic transformations
+- **Domain-specific access**: Physical/Social/Conceptual/Individual transformations
 - **NPU-253 API**: Programmatic context-aware queries
 
 ### 4. Gestalt Perception (100%)
@@ -149,7 +149,7 @@ Each "subculture" maintains distinct character while enriching the whole.
 - By number: 1-253
 - By category: Towns/Buildings/Construction
 - By sequence: 1-36
-- By domain: Physical/Social/Conceptual/Psychic
+- By domain: Physical/Social/Conceptual/Individual
 - By format: HTML/Markdown/JSON/Scheme
 - By tool: NPU-253/APL/OpenCog/Python
 

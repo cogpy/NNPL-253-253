@@ -13,7 +13,7 @@ graph TB
     L1_2["dim2<br/><b>Physical</b><br/>Spatial/Material"]
     L1_3["dim3<br/><b>Social</b><br/>Organizational"]
     L1_4["dim4<br/><b>Conceptual</b><br/>Knowledge/Theory"]
-    L1_5["dim5<br/><b>Interpersonal</b><br/>Consciousness"]
+    L1_5["dim5<br/><b>Individual</b><br/>Consciousness"]
     
     %% Level 2: 36 Sequences (showing structure)
     L2_0["36 Sequences<br/>6×6 = 36<br/>Thematic flows"]
@@ -171,7 +171,7 @@ graph TB
     D2["dim2: Physical<br/>Spatial/Architectural<br/>Built environment"]
     D3["dim3: Social<br/>Organizational<br/>Community/Institution"]
     D4["dim4: Conceptual<br/>Knowledge/Theory<br/>Paradigmatic"]
-    D5["dim5: Interpersonal<br/>Consciousness<br/>Mental/Psychic"]
+    D5["dim5: Individual<br/>Consciousness<br/>Mental/Individual"]
     
     %% Categories under dim2 (example)
     D2C1["cat1: Towns<br/>Patterns 1-94<br/>Regional scale"]

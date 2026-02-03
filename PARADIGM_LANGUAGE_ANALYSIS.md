@@ -94,7 +94,7 @@ Based on analyzing 253 APL patterns and 253 UIA archetypal patterns:
 - **OCaml/F#** - Algebraic data types for pattern structure
 
 **Use Case Fit:**
-- ✅ Domain transformations (physical/social/conceptual/psychic)
+- ✅ Domain transformations (physical/social/conceptual/individual)
 - ✅ Pattern composition and sequences
 - ✅ Placeholder substitution
 - ✅ Pattern validation and type checking
@@ -333,7 +333,7 @@ class PatternLanguage:
 
 **Code Example:**
 ```haskell
-data Domain = Physical | Social | Conceptual | Psychic
+data Domain = Physical | Social | Conceptual | Individual
 
 data ArchetypalPattern = ArchetypalPattern
   { patternId :: String
@@ -429,7 +429,7 @@ function customSalienceForce() {
    - Sequence generation
 
 3. **Transformation Engine (Haskell)**
-   - Domain transformations (physical/social/conceptual/psychic)
+   - Domain transformations (physical/social/conceptual/individual)
    - Placeholder substitution
    - Pattern composition
 

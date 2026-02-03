@@ -41,7 +41,7 @@
 │           Pattern 8: MOSAIC OF SUBCULTURES (Diversity)              │
 ├─────────────────────────────────────────────────────────────────────┤
 │                                                                     │
-│   Physical ←→ Social ←→ Conceptual ←→ Psychic                     │
+│   Physical ←→ Social ←→ Conceptual ←→ Individual                     │
 │      APL        UIA      Archetypal     Domains                    │
 │       │          │            │            │                        │
 │       └──────────┴────────────┴────────────┘                        │
@@ -82,7 +82,7 @@
 │       │                                                              │
 │   By Sequence: Seq1 → Seq2 → ... → Seq36                          │
 │       │                                                              │
-│   By Domain: Physical → Social → Conceptual → Psychic             │
+│   By Domain: Physical → Social → Conceptual → Individual             │
 │       │                                                              │
 │   By Format: HTML → Markdown → JSON → Scheme → Python             │
 │                                                                     │

@@ -14,7 +14,7 @@ Complete the Physical Pattern List in `PHYSICAL_PATTERN_LIST.md` based on UIA pa
    - Template patterns (abstract)
    - Social patterns
    - Conceptual patterns
-   - Psychic patterns
+   - Individual patterns
 
 2. **Key Finding**: The APL (A Pattern Language) by Christopher Alexander represents the **physical/architectural domain** transformation of the UIA organizational patterns.
 
@@ -64,14 +64,14 @@ The relationship between domains:
 Template (Generic) → Physical (APL)
                   → Social
                   → Conceptual
-                  → Psychic
+                  → Individual
 ```
 
 Each UIA pattern describes the same organizational principle across multiple domains:
 - **Physical**: Buildings, towns, spaces (Christopher Alexander's APL)
 - **Social**: Organizations, institutions, communities
 - **Conceptual**: Knowledge systems, theories, paradigms
-- **Psychic**: Modes of awareness, consciousness, mental patterns
+- **Individual**: Modes of awareness, consciousness, mental patterns
 
 ## Completion Status
 

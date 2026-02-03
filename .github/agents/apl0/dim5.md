@@ -1,6 +1,6 @@
 ---
 name: dim5
-description: "dim5 - Interpersonal Dimension"
+description: "dim5 - Individual Dimension"
 ---
 
 
@@ -13,10 +13,10 @@ Awareness, consciousness, and mental patterns in human psychology
 This dimension contains the same organizational hierarchy as all others:
 - **3 Categories**: cat1, cat2, cat3
 - **36 Sequences**: Pattern flows organized by theme
-- **253 Patterns**: Individual patterns viewed through the interpersonal lens
+- **253 Patterns**: Individual patterns viewed through the individual lens
 
 ## Navigation
-Explore the categories below to find sequences and patterns relevant to the interpersonal perspective.
+Explore the categories below to find sequences and patterns relevant to the individual perspective.
 
 ### Categories
 - **cat1/** - Category 1 patterns

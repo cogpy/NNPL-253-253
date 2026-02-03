@@ -42,7 +42,7 @@ Related patterns in use: [list of pattern IDs]
 | dim2 | Physical | Spatial, material, architectural |
 | dim3 | Social | Organizational, community, institutional |
 | dim4 | Conceptual | Knowledge, theoretical, paradigmatic |
-| dim5 | Interpersonal | Awareness, consciousness, mental |
+| dim5 | Individual | Awareness, consciousness, mental |
 
 ## Categories (Physical Dimension)
 

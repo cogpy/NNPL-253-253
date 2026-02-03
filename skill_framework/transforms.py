@@ -5,7 +5,7 @@ Supports transformation of patterns and skills across:
 - Physical domains (spatial, material, architectural)
 - Social domains (organizational, community, institutional)  
 - Conceptual domains (knowledge, theoretical, paradigmatic)
-- Psychic domains (awareness, consciousness, mental)
+- Individual domains (awareness, consciousness, mental)
 """
 
 from enum import Enum

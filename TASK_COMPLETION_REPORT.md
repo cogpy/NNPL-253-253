@@ -46,7 +46,7 @@ Template (Generic/Abstract)
     ├── Physical (APL) - Buildings, towns, architecture
     ├── Social - Organizations, communities, institutions  
     ├── Conceptual - Knowledge systems, theories, paradigms
-    └── Psychic - Modes of awareness, consciousness
+    └── Individual - Modes of awareness, consciousness
 ```
 
 Each domain represents the same organizational principles expressed in different contexts. The APL patterns (Physical domain) are Christopher Alexander's groundbreaking work applying pattern language to architecture and urban design.

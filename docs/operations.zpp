@@ -541,7 +541,7 @@ including pattern generation, domain transformation, validation, and queries.
     /* Transform each pattern to each domain */
     results! = ⟨transformed | 
       pid ∈ dom archetypal_registry.patterns,
-      d ∈ {Physical, Social, Conceptual, Psychic},
+      d ∈ {Physical, Social, Conceptual, Individual},
       TransformToDomain[pid/pattern_id?, d/target_domain?, 
                         transformed/transformed!]⟩
     

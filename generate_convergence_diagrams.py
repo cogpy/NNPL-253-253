@@ -179,7 +179,7 @@ graph TB
     D2["dim2: Physical<br/>Spatial/Architectural<br/>Built environment"]
     D3["dim3: Social<br/>Organizational<br/>Community/Institution"]
     D4["dim4: Conceptual<br/>Knowledge/Theory<br/>Paradigmatic"]
-    D5["dim5: Individual<br/>Consciousness<br/>Mental/Psychic"]
+    D5["dim5: Individual<br/>Consciousness<br/>Mental/Individual"]
     
     %% Categories under dim2 (example)
     D2C1["cat1: Towns<br/>Patterns 1-94<br/>Regional scale"]

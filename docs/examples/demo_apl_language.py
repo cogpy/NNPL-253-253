@@ -203,7 +203,7 @@ pattern ← archetypal[archetypal[;1]='12610010';]
 physical ← TransformToDomain pattern 'physical'
 social ← TransformToDomain pattern 'social'
 conceptual ← TransformToDomain pattern 'conceptual'
-psychic ← TransformToDomain pattern 'psychic'
+individual ← TransformToDomain pattern 'individual'
 
 ⍝ Compare transformations
 physical[1]

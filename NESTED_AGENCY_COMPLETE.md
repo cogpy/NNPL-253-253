@@ -31,7 +31,7 @@ Successfully created a complete nested agency structure for the Pattern Language
 │   ├── physical.md + physical/      # Physical dimension (P)
 │   ├── social.md + social/          # Social dimension (S)
 │   ├── conceptual.md + conceptual/  # Conceptual dimension (C)
-│   └── interpersonal.md + interpersonal/ # Interpersonal dimension (I)
+│   └── individual.md + individual/ # Individual dimension (I)
 ```
 
 ## Implementation Details
@@ -54,7 +54,7 @@ Successfully created a complete nested agency structure for the Pattern Language
 | P | Physical | Spatial, material, architectural manifestations |
 | S | Social | Organizational, community, institutional expressions |
 | C | Conceptual | Knowledge, theoretical, paradigmatic realizations |
-| I | Interpersonal | Awareness, consciousness, mental structures |
+| I | Individual | Awareness, consciousness, mental structures |
 
 ### Categories
 
@@ -170,7 +170,7 @@ The structure enables exploration of how architectural patterns can be viewed as
 - Physical spaces (Physical)
 - Social organizations (Social)
 - Conceptual frameworks (Conceptual)
-- Psychological structures (Interpersonal)
+- Psychological structures (Individual)
 
 ## Specification Compliance
 

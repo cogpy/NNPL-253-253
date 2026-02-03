@@ -79,7 +79,7 @@
 │   deps of P-0    │  │ • Archetypal →   │  │ • Compute            │
 │ • Find pattern   │  │   Conceptual     │  │   connectivity       │
 │   path P1→P2     │  │ • Archetypal →   │  │                      │
-│                  │  │   Psychic        │  │                      │
+│                  │  │   Individual        │  │                      │
 │                  │  │ • Validate       │  │                      │
 │                  │  │   mappings       │  │                      │
 │                  │  │                  │  │                      │

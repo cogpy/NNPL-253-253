@@ -108,7 +108,7 @@ Domain Transformations:
   Physical:    "Balance between regions/areas requires cities/infrastructure"
   Social:      "Balance between communities requires institutions/systems"
   Conceptual:  "Balance between knowledge domains requires paradigms/theories"
-  Psychic:     "Balance between modes of awareness requires mental structures"
+  Individual:     "Balance between modes of awareness requires mental structures"
 ```
 
 ### Domain Placeholder Dictionary
@@ -125,7 +125,7 @@ Domain Transformations:
 9. `{{patterns}}` - Recurring configurations
 10. `{{modes}}` - Operating states or methods
 
-Each placeholder maps to 4 domains: Physical, Social, Conceptual, Psychic
+Each placeholder maps to 4 domains: Physical, Social, Conceptual, Individual
 
 ## Using the Specifications
 

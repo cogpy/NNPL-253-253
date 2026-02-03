@@ -8,7 +8,7 @@ The framework is domain-agnostic and supports application to any domain of inqui
 - Physical domains (spatial, material, architectural)
 - Social domains (organizational, community, institutional)
 - Conceptual domains (knowledge, theoretical, paradigmatic)
-- Psychic domains (awareness, consciousness, mental)
+- Individual domains (awareness, consciousness, mental)
 """
 
 from .skill import Skill, SkillResult, SkillStatus

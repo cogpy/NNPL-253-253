@@ -71,7 +71,7 @@ Successfully implemented the **NPU-253 (Neural Processing Unit / Natural Pattern
 ✅ 3 pattern categories (towns/buildings/construction)  
 ✅ Query by ID, name, and full-text search  
 ✅ Pattern relationship navigation (preceding/following)  
-✅ Domain transformation (physical/social/conceptual/psychic)  
+✅ Domain transformation (physical/social/conceptual/individual)  
 
 ### Performance & Diagnostics
 ✅ LRU caching with configurable size  

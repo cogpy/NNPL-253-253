@@ -50,7 +50,7 @@ RunAllDemos
 | Transform to physical | `TransformToPhysical pattern` | Spatial/material |
 | Transform to social | `TransformToSocial pattern` | Organizational |
 | Transform to conceptual | `TransformToConceptual pattern` | Knowledge/theory |
-| Transform to psychic | `TransformToPsychic pattern` | Consciousness |
+| Transform to individual | `TransformToIndividual pattern` | Consciousness |
 | Apply all domains | `ApplyAllDomains pattern` | All 4 domains |
 | Show domains | `ShowDomainInfo` | Domain info |
 
