@@ -1,0 +1,89 @@
+{
+  "mappings": [
+    {
+      "pattern_id": 1,
+      "pattern_name": "INDEPENDENT REGIONS",
+      "application": "Repository autonomous domains",
+      "current_state": [
+        "pattern",
+        "uia",
+        "docs",
+        "apl",
+        "markdown",
+        "apl_language",
+        "opencog_atomese",
+        "npu253"
+      ],
+      "recommendation": "Ensure each domain (apl, uia, markdown, opencog_atomese, npu253, docs) is self-contained"
+    },
+    {
+      "pattern_id": 8,
+      "pattern_name": "MOSAIC OF SUBCULTURES",
+      "application": "Diverse pattern collections",
+      "current_state": "APL, UIA, Archetypal, OpenCog representations",
+      "recommendation": "Maintain diversity while ensuring coherence through cross-references"
+    },
+    {
+      "pattern_id": 28,
+      "pattern_name": "ECCENTRIC NUCLEUS",
+      "application": "Repository navigation centers",
+      "current_state": [
+        "README.md",
+        "QUICK_REFERENCE.md"
+      ],
+      "recommendation": "Create pattern-based index system with multiple entry points"
+    },
+    {
+      "pattern_id": 52,
+      "pattern_name": "NETWORK OF PATHS AND CARS",
+      "application": "Documentation navigation",
+      "current_state": "Multiple README files, documentation",
+      "recommendation": "Create clear navigation paths through sequences"
+    },
+    {
+      "pattern_id": 95,
+      "pattern_name": "BUILDING COMPLEX",
+      "application": "Module organization",
+      "current_state": "Python scripts, JSON data, documentation separate",
+      "recommendation": "Group related functionality into cohesive modules"
+    }
+  ],
+  "actions": [
+    {
+      "sequence": 1,
+      "pattern": 1,
+      "action": "Create PATTERN_MAP.md documenting repository regions",
+      "rationale": "Establishes autonomous domains with clear boundaries"
+    },
+    {
+      "sequence": 3,
+      "pattern": 8,
+      "action": "Create cross-reference index linking APL, UIA, Archetypal patterns",
+      "rationale": "Supports mosaic of diverse pattern representations"
+    },
+    {
+      "sequence": 7,
+      "pattern": 28,
+      "action": "Create NAVIGATION_HUB.md with multiple entry points",
+      "rationale": "Provides eccentric nucleus for exploration"
+    },
+    {
+      "sequence": 10,
+      "pattern": 52,
+      "action": "Implement sequence-based navigation files",
+      "rationale": "Creates network of paths through pattern space"
+    },
+    {
+      "sequence": 16,
+      "pattern": 95,
+      "action": "Group related scripts into modules/",
+      "rationale": "Forms coherent building complexes"
+    },
+    {
+      "sequence": 20,
+      "pattern": 132,
+      "action": "Create hierarchical directory structure with clear gradients",
+      "rationale": "Establishes privacy gradient from general to specific"
+    }
+  ]
+}

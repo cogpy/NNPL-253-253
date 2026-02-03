@@ -1,0 +1,48 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#4a90d9'}}}%%
+flowchart TB
+    subgraph PRESENTATION["Presentation Layer"]
+        VIZ["D3.js Visualization<br/>Force-directed graphs<br/>Salience heatmaps"]
+    end
+
+    subgraph INTEGRATION["Integration Layer"]
+        API["Python FastAPI<br/>REST Endpoints<br/>/api/patterns<br/>/api/gestalts"]
+    end
+
+    subgraph PROCESSING["Processing Layers"]
+        direction LR
+        QUERY["Query Layer<br/>Datalog<br/>Pattern discovery"]
+        TRANSFORM["Transform Layer<br/>Haskell<br/>Domain transforms"]
+        SALIENCE["Salience Layer<br/>Python ML<br/>Context scoring"]
+    end
+
+    subgraph FOUNDATION["Foundation Layer"]
+        ATOMESE["OpenCog Atomese<br/>Hypergraph Structure<br/>253 APL + 253 UIA Patterns"]
+    end
+
+    subgraph DATA["Data Files"]
+        direction LR
+        JSON["JSON Schemas<br/>pattern_*.json"]
+        SCM["Scheme Files<br/>*.scm"]
+        MD["Markdown<br/>markdown/**/*.md"]
+    end
+
+    VIZ <-->|REST| API
+    API <--> QUERY
+    API <--> TRANSFORM
+    API <--> SALIENCE
+    QUERY <--> ATOMESE
+    TRANSFORM <--> ATOMESE
+    SALIENCE <--> ATOMESE
+    ATOMESE <--> DATA
+
+    classDef presentation fill:#805ad5,stroke:#553c9a,color:#fff
+    classDef integration fill:#4299e1,stroke:#2b6cb0,color:#fff
+    classDef processing fill:#48bb78,stroke:#276749,color:#fff
+    classDef foundation fill:#ed8936,stroke:#c05621,color:#fff
+    classDef data fill:#718096,stroke:#4a5568,color:#fff
+
+    class VIZ presentation
+    class API integration
+    class QUERY,TRANSFORM,SALIENCE processing
+    class ATOMESE foundation
+    class JSON,SCM,MD data

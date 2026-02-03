@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern Language Explorer - Interactive Visualization</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #1a1a1a;
+            color: #e0e0e0;
+            overflow: hidden;
+        }
+
+        #container {
+            display: flex;
+            height: 100vh;
+        }
+
+        #sidebar {
+            width: 300px;
+            background: #252525;
+            padding: 20px;
+            overflow-y: auto;
+            border-right: 1px solid #404040;
+        }
+
+        #visualization {
+            flex: 1;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #4fc3f7;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin: 20px 0 10px 0;
+            color: #81c784;
+        }
+
+        .control-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #b0b0b0;
+        }
+
+        select, input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            background: #333;
+            border: 1px solid #555;
+            border-radius: 4px;
+            color: #e0e0e0;
+            font-size: 14px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background: #4fc3f7;
+            border: none;
+            border-radius: 4px;
+            color: #000;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #29b6f6;
+        }
+
+        .pattern-info {
+            margin-top: 20px;
+            padding: 15px;
+            background: #2a2a2a;
+            border-radius: 4px;
+            border-left: 3px solid #4fc3f7;
+        }
+
+        .pattern-name {
+            font-weight: bold;
+            color: #4fc3f7;
+            margin-bottom: 5px;
+        }
+
+        .pattern-detail {
+            font-size: 12px;
+            margin: 5px 0;
+            color: #b0b0b0;
+        }
+
+        .salience-score {
+            display: inline-block;
+            padding: 2px 6px;
+            background: #81c784;
+            color: #000;
+            border-radius: 3px;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .legend {
+            margin-top: 20px;
+            padding: 10px;
+            background: #2a2a2a;
+            border-radius: 4px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+            font-size: 12px;
+        }
+
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+
+        #svg-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .node {
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .node:hover {
+            stroke-width: 3px;
+        }
+
+        .node.selected {
+            stroke: #ffeb3b;
+            stroke-width: 4px;
+        }
+
+        .link {
+            stroke: #666;
+            stroke-opacity: 0.6;
+        }
+
+        .link.highlighted {
+            stroke: #4fc3f7;
+            stroke-opacity: 1;
+            stroke-width: 2px;
+        }
+
+        .node-label {
+            font-size: 10px;
+            fill: #e0e0e0;
+            pointer-events: none;
+            text-anchor: middle;
+        }
+
+        .tooltip {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.9);
+            color: #fff;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s;
+            max-width: 300px;
+            border: 1px solid #4fc3f7;
+        }
+
+        .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 18px;
+            color: #4fc3f7;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="sidebar">
+            <h1>Pattern Language</h1>
+            <p style="font-size: 12px; color: #888; margin-bottom: 20px;">
+                Interactive visualization for optimal cognitive grip
+            </p>
+
+            <div class="control-group">
+                <label>Category Filter</label>
+                <select id="category-select">
+                    <option value="all">All Categories</option>
+                    <option value="Towns">Towns (1-94)</option>
+                    <option value="Buildings">Buildings (95-204)</option>
+                    <option value="Construction">Construction (205-253)</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label>Search Keywords</label>
+                <input type="text" id="keyword-search" placeholder="Enter keywords...">
+                <button onclick="searchPatterns()">Search & Highlight</button>
+            </div>
+
+            <div class="control-group">
+                <label>Visualization Mode</label>
+                <select id="mode-select" onchange="changeMode()">
+                    <option value="network">Network Graph</option>
+                    <option value="salience">Salience Landscape</option>
+                    <option value="gestalt">Gestalt Clusters</option>
+                </select>
+            </div>
+
+            <button onclick="resetVisualization()">Reset View</button>
+
+            <div id="pattern-info" class="pattern-info" style="display: none;">
+                <div class="pattern-name" id="info-name"></div>
+                <div class="pattern-detail" id="info-id"></div>
+                <div class="pattern-detail" id="info-category"></div>
+                <div class="pattern-detail" id="info-connections"></div>
+                <div class="pattern-detail" id="info-problem"></div>
+            </div>
+
+            <div class="legend">
+                <h2>Legend</h2>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #f44336;"></div>
+                    <span>Towns (1-94)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #4caf50;"></div>
+                    <span>Buildings (95-204)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #2196f3;"></div>
+                    <span>Construction (205-253)</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="visualization">
+            <div class="loading" id="loading">Loading pattern data...</div>
+            <svg id="svg-container"></svg>
+            <div class="tooltip" id="tooltip"></div>
+        </div>
+    </div>
+
+    <script>
+        // Configuration
+        const API_BASE = 'http://localhost:8000';
+        const WIDTH = window.innerWidth - 300;
+        const HEIGHT = window.innerHeight;
+
+        // State
+        let patterns = [];
+        let links = [];
+        let simulation = null;
+        let selectedNode = null;
+
+        // D3 elements
+        const svg = d3.select('#svg-container')
+            .attr('width', WIDTH)
+            .attr('height', HEIGHT);
+
+        const g = svg.append('g');
+        const linkGroup = g.append('g').attr('class', 'links');
+        const nodeGroup = g.append('g').attr('class', 'nodes');
+        const labelGroup = g.append('g').attr('class', 'labels');
+
+        // Zoom behavior
+        const zoom = d3.zoom()
+            .scaleExtent([0.1, 4])
+            .on('zoom', (event) => {
+                g.attr('transform', event.transform);
+            });
+
+        svg.call(zoom);
+
+        // Color scale for categories
+        const categoryColor = {
+            'Towns': '#f44336',
+            'Buildings': '#4caf50',
+            'Construction': '#2196f3',
+            'Unknown': '#999'
+        };
+
+        // Initialize
+        async function init() {
+            try {
+                await loadPatterns();
+                createVisualization();
+                document.getElementById('loading').style.display = 'none';
+            } catch (error) {
+                document.getElementById('loading').textContent = 
+                    'Error: Could not connect to API. Make sure pattern_api.py is running.';
+                console.error('Initialization error:', error);
+            }
+        }
+
+        async function loadPatterns() {
+            const response = await fetch(`${API_BASE}/patterns?limit=253`);
+            patterns = await response.json();
+
+            // Build links from pattern connections
+            links = [];
+            patterns.forEach(pattern => {
+                pattern.following_patterns.forEach(following => {
+                    const target = patterns.find(p => p.number === following);
+                    if (target) {
+                        links.push({
+                            source: pattern.id,
+                            target: target.id
+                        });
+                    }
+                });
+            });
+
+            console.log(`Loaded ${patterns.length} patterns and ${links.length} links`);
+        }
+
+        function createVisualization() {
+            // Create force simulation
+            simulation = d3.forceSimulation(patterns)
+                .force('link', d3.forceLink(links)
+                    .id(d => d.id)
+                    .distance(50))
+                .force('charge', d3.forceManyBody().strength(-100))
+                .force('center', d3.forceCenter(WIDTH / 2, HEIGHT / 2))
+                .force('collision', d3.forceCollide().radius(15));
+
+            // Create links
+            const link = linkGroup.selectAll('line')
+                .data(links)
+                .enter().append('line')
+                .attr('class', 'link')
+                .attr('stroke-width', 1);
+
+            // Create nodes
+            const node = nodeGroup.selectAll('circle')
+                .data(patterns)
+                .enter().append('circle')
+                .attr('class', 'node')
+                .attr('r', d => 5 + d.asterisks * 2)
+                .attr('fill', d => categoryColor[d.category] || categoryColor['Unknown'])
+                .attr('stroke', '#fff')
+                .attr('stroke-width', 1.5)
+                .call(drag(simulation))
+                .on('click', onNodeClick)
+                .on('mouseover', onNodeMouseOver)
+                .on('mouseout', onNodeMouseOut);
+
+            // Create labels (only for important patterns)
+            const label = labelGroup.selectAll('text')
+                .data(patterns.filter(d => d.asterisks >= 2))
+                .enter().append('text')
+                .attr('class', 'node-label')
+                .text(d => d.number);
+
+            // Update positions on tick
+            simulation.on('tick', () => {
+                link
+                    .attr('x1', d => d.source.x)
+                    .attr('y1', d => d.source.y)
+                    .attr('x2', d => d.target.x)
+                    .attr('y2', d => d.target.y);
+
+                node
+                    .attr('cx', d => d.x)
+                    .attr('cy', d => d.y);
+
+                label
+                    .attr('x', d => d.x)
+                    .attr('y', d => d.y + 4);
+            });
+        }
+
+        function drag(simulation) {
+            function dragstarted(event) {
+                if (!event.active) simulation.alphaTarget(0.3).restart();
+                event.subject.fx = event.subject.x;
+                event.subject.fy = event.subject.y;
+            }
+
+            function dragged(event) {
+                event.subject.fx = event.x;
+                event.subject.fy = event.y;
+            }
+
+            function dragended(event) {
+                if (!event.active) simulation.alphaTarget(0);
+                event.subject.fx = null;
+                event.subject.fy = null;
+            }
+
+            return d3.drag()
+                .on('start', dragstarted)
+                .on('drag', dragged)
+                .on('end', dragended);
+        }
+
+        function onNodeClick(event, d) {
+            // Update selected node
+            d3.selectAll('.node').classed('selected', false);
+            d3.select(this).classed('selected', true);
+            selectedNode = d;
+
+            // Show pattern info
+            const info = document.getElementById('pattern-info');
+            info.style.display = 'block';
+            document.getElementById('info-name').textContent = d.name;
+            document.getElementById('info-id').textContent = `Pattern ${d.number} (${d.id})`;
+            document.getElementById('info-category').textContent = `Category: ${d.category}`;
+            document.getElementById('info-connections').textContent = 
+                `Connections: ${d.preceding_patterns.length} preceding, ${d.following_patterns.length} following`;
+            document.getElementById('info-problem').textContent = 
+                d.problem.substring(0, 200) + (d.problem.length > 200 ? '...' : '');
+
+            // Highlight connected patterns
+            highlightConnections(d);
+        }
+
+        function highlightConnections(pattern) {
+            const connected = new Set([
+                ...pattern.preceding_patterns.map(n => `apl${n}`),
+                ...pattern.following_patterns.map(n => `apl${n}`)
+            ]);
+
+            d3.selectAll('.link')
+                .classed('highlighted', d => 
+                    d.source.id === pattern.id || d.target.id === pattern.id);
+
+            d3.selectAll('.node')
+                .style('opacity', d => 
+                    d.id === pattern.id || connected.has(d.id) ? 1 : 0.3);
+        }
+
+        function onNodeMouseOver(event, d) {
+            const tooltip = document.getElementById('tooltip');
+            tooltip.style.opacity = 1;
+            tooltip.style.left = (event.pageX + 10) + 'px';
+            tooltip.style.top = (event.pageY - 10) + 'px';
+            tooltip.innerHTML = `
+                <strong>${d.name}</strong><br>
+                Pattern ${d.number}<br>
+                Category: ${d.category}<br>
+                Importance: ${'★'.repeat(d.asterisks)}
+            `;
+        }
+
+        function onNodeMouseOut() {
+            const tooltip = document.getElementById('tooltip');
+            tooltip.style.opacity = 0;
+        }
+
+        function resetVisualization() {
+            d3.selectAll('.node')
+                .classed('selected', false)
+                .style('opacity', 1);
+            d3.selectAll('.link')
+                .classed('highlighted', false);
+            document.getElementById('pattern-info').style.display = 'none';
+            selectedNode = null;
+        }
+
+        async function searchPatterns() {
+            const keywords = document.getElementById('keyword-search').value;
+            if (!keywords) return;
+
+            // Highlight patterns matching keywords
+            const keywordSet = new Set(keywords.toLowerCase().split(/\s+/));
+            
+            d3.selectAll('.node')
+                .style('opacity', d => {
+                    const text = (d.name + ' ' + d.problem + ' ' + d.solution).toLowerCase();
+                    return Array.from(keywordSet).some(kw => text.includes(kw)) ? 1 : 0.2;
+                })
+                .attr('r', d => {
+                    const text = (d.name + ' ' + d.problem + ' ' + d.solution).toLowerCase();
+                    const matches = Array.from(keywordSet).some(kw => text.includes(kw));
+                    return matches ? 8 + d.asterisks * 2 : 5 + d.asterisks * 2;
+                });
+        }
+
+        function changeMode() {
+            const mode = document.getElementById('mode-select').value;
+            alert(`Visualization mode: ${mode}\nThis feature is under development.`);
+        }
+
+        // Category filter
+        document.getElementById('category-select').addEventListener('change', function(e) {
+            const category = e.target.value;
+            
+            d3.selectAll('.node')
+                .style('opacity', d => 
+                    category === 'all' || d.category === category ? 1 : 0.2);
+            
+            d3.selectAll('.link')
+                .style('opacity', d => {
+                    if (category === 'all') return 0.6;
+                    return (d.source.category === category && d.target.category === category) ? 0.6 : 0.1;
+                });
+        });
+
+        // Start
+        init();
+    </script>
+</body>
+</html>

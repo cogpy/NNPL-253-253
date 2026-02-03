@@ -1,0 +1,65 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#4a90d9'}}}%%
+flowchart TB
+    subgraph TOWNS_SEQ["Towns Sequences (1-15)"]
+        S1["Seq 1: Regions"]
+        S2["Seq 2: Regional Policies<br/>(P2-7)"]
+        S3["Seq 3: Major Structures<br/>(P8-11)"]
+        S4["Seq 4: Communities<br/>(P12-15)"]
+        S5["Seq 5: Networks<br/>(P16-20)"]
+        S6["Seq 6: Local Character<br/>(P21-27)"]
+        S7["Seq 7: Local Centers<br/>(P28-34)"]
+        S8["Seq 8: Housing<br/>(P35-40)"]
+        S9["Seq 9: Work<br/>(P41-50)"]
+        S10["Seq 10: Paths<br/>(P51-57)"]
+        S11["Seq 11: Public Land<br/>(P58-64)"]
+        S12["Seq 12: Common Land<br/>(P65-71)"]
+        S13["Seq 13: Family<br/>(P72-78)"]
+        S14["Seq 14: Work/Learning<br/>(P79-89)"]
+        S15["Seq 15: Shops/Gathering<br/>(P90-94)"]
+    end
+
+    subgraph BLDG_SEQ["Buildings Sequences (16-28)"]
+        S16["Seq 16: Building Groups<br/>(P95-103)"]
+        S17["Seq 17: Building Position<br/>(P104-110)"]
+        S18["Seq 18: Entrances/Gardens<br/>(P111-119)"]
+        S19["Seq 19: Paths/Squares<br/>(P120-131)"]
+        S20["Seq 20: Space Gradients<br/>(P132-142)"]
+        S21["Seq 21: House Rooms<br/>(P143-151)"]
+        S22["Seq 22: Office Rooms<br/>(P152-161)"]
+        S23["Seq 23: Outbuildings<br/>(P162-171)"]
+        S24["Seq 24: Inside/Outside<br/>(P172-182)"]
+        S25["Seq 25: Gardens<br/>(P183-189)"]
+        S26["Seq 26: Alcoves<br/>(P190-196)"]
+        S27["Seq 27: Room Tuning<br/>(P190-196)"]
+        S28["Seq 28: Wall Depth<br/>(P197-204)"]
+    end
+
+    subgraph CONST_SEQ["Construction Sequences (29-36)"]
+        S29["Seq 29: Structure<br/>(P205-208)"]
+        S30["Seq 30: Layout<br/>(P209-213)"]
+        S31["Seq 31: Frame<br/>(P214-220)"]
+        S32["Seq 32: Openings<br/>(P221-225)"]
+        S33["Seq 33: Subsidiary<br/>(P226-232)"]
+        S34["Seq 34: Surfaces<br/>(P233-240)"]
+        S35["Seq 35: Outdoor Details<br/>(P241-248)"]
+        S36["Seq 36: Completion<br/>(P249-253)"]
+    end
+
+    S1 --> S2 --> S3 --> S4 --> S5
+    S5 --> S6 --> S7 --> S8 --> S9 --> S10
+    S10 --> S11 --> S12 --> S13 --> S14 --> S15
+    S15 --> S16
+    S16 --> S17 --> S18 --> S19 --> S20
+    S20 --> S21 --> S22 --> S23 --> S24 --> S25
+    S25 --> S26 --> S27 --> S28
+    S28 --> S29
+    S29 --> S30 --> S31 --> S32 --> S33
+    S33 --> S34 --> S35 --> S36
+
+    classDef towns fill:#4299e1,stroke:#2b6cb0,color:#fff
+    classDef buildings fill:#48bb78,stroke:#276749,color:#fff
+    classDef construction fill:#ed8936,stroke:#c05621,color:#fff
+
+    class S1,S2,S3,S4,S5,S6,S7,S8,S9,S10,S11,S12,S13,S14,S15 towns
+    class S16,S17,S18,S19,S20,S21,S22,S23,S24,S25,S26,S27,S28 buildings
+    class S29,S30,S31,S32,S33,S34,S35,S36 construction

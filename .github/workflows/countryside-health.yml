@@ -1,0 +1,54 @@
+name: Countryside Health Check
+
+# Pattern 7 (THE COUNTRYSIDE) - Automated ecosystem health monitoring
+# Runs on PRs and pushes to verify commons integrity
+
+on:
+  push:
+    branches: [ main, master, develop ]
+  pull_request:
+    branches: [ main, master, develop ]
+    paths:
+      - 'apl/**'
+      - 'uia/**'
+      - '**.json'
+      - 'generate_*.py'
+      - 'validate_*.py'
+      - 'verify_countryside_health.sh'
+
+jobs:
+  health-check:
+    name: Check Countryside Ecosystem Health
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      
+      - name: Install dependencies
+        run: |
+          pip install beautifulsoup4 lxml
+      
+      - name: Make health check script executable
+        run: chmod +x verify_countryside_health.sh
+      
+      - name: Run Countryside Health Check
+        run: ./verify_countryside_health.sh
+        continue-on-error: true
+      
+      - name: Validate JSON syntax
+        run: |
+          echo "Validating JSON syntax..."
+          JSON_FILES="pattern_language_generated.json archetypal_patterns.json pattern_sequences.json"
+          for file in $JSON_FILES; do
+            if [ -f "$file" ]; then
+              python3 -c "import json; json.load(open('$file'))" && echo "✅ $file"
+            fi
+          done

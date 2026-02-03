@@ -1,0 +1,58 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#4a90d9'}}}%%
+graph TD
+    subgraph RELATIONSHIP_TYPES["Pattern Relationship Types"]
+        direction TB
+
+        subgraph HIERARCHY["Hierarchical (InheritanceLink)"]
+            CAT["Category"]
+            PAT["Pattern"]
+            CAT -->|contains| PAT
+        end
+
+        subgraph SEQUENCE["Sequential (MemberLink)"]
+            SEQ["Sequence"]
+            P1["Pattern 1"]
+            P2["Pattern 2"]
+            P3["Pattern 3"]
+            SEQ -->|step 1| P1
+            SEQ -->|step 2| P2
+            SEQ -->|step 3| P3
+        end
+
+        subgraph DEPENDENCY["Dependency (ImplicationLink)"]
+            PA["Pattern A"]
+            PB["Pattern B"]
+            PC["Pattern C"]
+            PA -->|requires| PB
+            PA -->|supports| PC
+        end
+
+        subgraph EMERGENCE["Emergence (EvaluationLink)"]
+            PATS["Patterns in Sequence"]
+            EMRG["Emergent Phenomenon"]
+            PATS -->|synergy creates| EMRG
+        end
+    end
+
+    subgraph EXAMPLE["Example: Intimacy Gradient (P127)"]
+        P127["127. Intimacy Gradient"]
+        P129["129. Common Areas<br/>at the Heart"]
+        P130["130. Entrance Room"]
+        P144["144. Bathing Room"]
+        P154["154. Teenager's Cottage"]
+
+        P127 -->|leads to| P129
+        P127 -->|leads to| P130
+        P127 -->|leads to| P144
+        P127 -->|leads to| P154
+    end
+
+    classDef category fill:#805ad5,stroke:#553c9a,color:#fff
+    classDef pattern fill:#4299e1,stroke:#2b6cb0,color:#fff
+    classDef sequence fill:#48bb78,stroke:#276749,color:#fff
+    classDef emergence fill:#ed8936,stroke:#c05621,color:#fff
+
+    class CAT category
+    class PAT,PA,PB,PC,P1,P2,P3,P127,P129,P130,P144,P154 pattern
+    class SEQ sequence
+    class PATS,EMRG emergence

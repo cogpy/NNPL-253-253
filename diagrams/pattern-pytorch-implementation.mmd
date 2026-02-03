@@ -1,0 +1,92 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#ee4c2c', 'primaryTextColor': '#fff'}}}%%
+flowchart TB
+    subgraph PYTORCH_PATTERN["PyTorch Pattern Neural Network"]
+        direction TB
+
+        subgraph EMBEDDINGS["Embedding Layers"]
+            direction LR
+            E_PAT["PatternEmbedding<br/>nn.Embedding(253, 512)"]
+            E_CAT["CategoryEmbedding<br/>nn.Embedding(3, 128)"]
+            E_SEQ["SequenceEmbedding<br/>nn.Embedding(36, 256)"]
+            E_DOM["DomainEmbedding<br/>nn.Embedding(4, 128)"]
+        end
+
+        subgraph ENCODERS["Component Encoders"]
+            direction TB
+
+            subgraph CONTEXT_ENC["ContextEncoder (Transformer)"]
+                C_ATT["MultiHeadAttention<br/>heads=8, dim=512"]
+                C_NORM["LayerNorm + Dropout"]
+                C_FF["FeedForward(512, 2048)"]
+            end
+
+            subgraph PROBLEM_ENC["ProblemEncoder (BiLSTM)"]
+                P_LSTM["nn.LSTM<br/>bidirectional=True<br/>hidden=256"]
+                P_ATT["Attention Pooling"]
+            end
+
+            subgraph SOLUTION_ENC["SolutionEncoder (Transformer)"]
+                S_ATT["CrossAttention<br/>problem → solution"]
+                S_DEC["TransformerDecoder<br/>layers=6"]
+            end
+
+            subgraph CONNECTION_ENC["ConnectionEncoder (GNN)"]
+                G_CONV["GraphConv<br/>pattern relationships"]
+                G_AGG["NeighborAggregation"]
+            end
+        end
+
+        subgraph PATTERN_HEAD["Pattern Representation Head"]
+            direction LR
+            CONCAT["torch.cat([ctx, prob, sol, conn])"]
+            FC1["nn.Linear(1536, 768)"]
+            RELU["nn.ReLU()"]
+            FC2["nn.Linear(768, 512)"]
+            NORM["F.normalize(dim=-1)"]
+        end
+
+        subgraph OUTPUTS["Output Heads"]
+            direction TB
+            OUT_NEXT["NextPatternHead<br/>Linear(512, 253)<br/>Softmax"]
+            OUT_CAT["CategoryHead<br/>Linear(512, 3)<br/>Softmax"]
+            OUT_SIM["SimilarityHead<br/>CosineSimilarity"]
+            OUT_DOM["DomainTransformHead<br/>Linear(512, 4*512)"]
+        end
+    end
+
+    E_PAT & E_CAT & E_SEQ & E_DOM --> ENCODERS
+    CONTEXT_ENC --> CONCAT
+    PROBLEM_ENC --> CONCAT
+    SOLUTION_ENC --> CONCAT
+    CONNECTION_ENC --> CONCAT
+    CONCAT --> FC1 --> RELU --> FC2 --> NORM
+    NORM --> OUT_NEXT & OUT_CAT & OUT_SIM & OUT_DOM
+
+    subgraph TRAINING["Training Configuration"]
+        direction LR
+        LOSS["Loss Functions:<br/>CrossEntropy (next pattern)<br/>Triplet (similarity)<br/>MSE (domain transform)"]
+        OPT["Optimizer:<br/>AdamW, lr=1e-4<br/>weight_decay=0.01"]
+        SCHED["Scheduler:<br/>CosineAnnealing<br/>warmup_steps=1000"]
+    end
+
+    subgraph TENSOR_SHAPES["Tensor Shapes"]
+        direction TB
+        T1["pattern_emb: (batch, 512)"]
+        T2["context_enc: (batch, seq, 512)"]
+        T3["problem_enc: (batch, 512)"]
+        T4["solution_enc: (batch, seq, 512)"]
+        T5["connection_enc: (batch, neighbors, 512)"]
+        T6["pattern_repr: (batch, 512)"]
+    end
+
+    classDef embedding fill:#ee4c2c,stroke:#b91c1c,color:#fff
+    classDef encoder fill:#4299e1,stroke:#2b6cb0,color:#fff
+    classDef head fill:#48bb78,stroke:#276749,color:#fff
+    classDef output fill:#805ad5,stroke:#553c9a,color:#fff
+    classDef training fill:#718096,stroke:#4a5568,color:#fff
+
+    class E_PAT,E_CAT,E_SEQ,E_DOM embedding
+    class CONTEXT_ENC,PROBLEM_ENC,SOLUTION_ENC,CONNECTION_ENC,C_ATT,C_NORM,C_FF,P_LSTM,P_ATT,S_ATT,S_DEC,G_CONV,G_AGG encoder
+    class PATTERN_HEAD,CONCAT,FC1,RELU,FC2,NORM head
+    class OUT_NEXT,OUT_CAT,OUT_SIM,OUT_DOM output
+    class LOSS,OPT,SCHED,TRAINING training

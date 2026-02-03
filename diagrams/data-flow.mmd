@@ -1,0 +1,60 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#4a90d9'}}}%%
+flowchart LR
+    subgraph SOURCES["Source Data"]
+        APL_HTML["apl/*.html<br/>253 APL patterns"]
+        UIA_FILES["uia/*<br/>253 UIA patterns"]
+    end
+
+    subgraph GENERATORS["Python Generators"]
+        GEN_PAT["generate_pattern_schema.py"]
+        GEN_ARCH["generate_archetypal_schema.py"]
+        GEN_OCG["generate_opencog_atomese.py"]
+        GEN_ENH["generate_enhanced_atomese.py"]
+    end
+
+    subgraph MARKDOWN["Markdown Output"]
+        MD_APL["markdown/apl/<br/>apl001.md - apl253.md"]
+        MD_UIA["markdown/uia/<br/>UIA patterns"]
+        MD_ARC["markdown/arc/<br/>102 archetypal patterns"]
+    end
+
+    subgraph JSON_OUT["JSON Schemas"]
+        PAT_JSON["pattern_language_generated.json"]
+        ARCH_JSON["archetypal_patterns.json"]
+        SEQ_JSON["pattern_sequences.json"]
+        CAT_JSON["category_*.json"]
+    end
+
+    subgraph ATOMESE["OpenCog Atomese"]
+        PAT_SCM["pattern_language.scm"]
+        ENH_SCM["pattern_language_enhanced.scm"]
+        META_SCM["meta_pattern.scm"]
+    end
+
+    APL_HTML --> GEN_PAT
+    UIA_FILES --> GEN_ARCH
+
+    GEN_PAT --> MD_APL
+    GEN_PAT --> PAT_JSON
+    GEN_PAT --> SEQ_JSON
+    GEN_PAT --> CAT_JSON
+
+    GEN_ARCH --> MD_ARC
+    GEN_ARCH --> ARCH_JSON
+
+    GEN_OCG --> PAT_SCM
+    GEN_OCG --> META_SCM
+
+    GEN_ENH --> ENH_SCM
+
+    classDef source fill:#718096,stroke:#4a5568,color:#fff
+    classDef generator fill:#805ad5,stroke:#553c9a,color:#fff
+    classDef markdown fill:#4299e1,stroke:#2b6cb0,color:#fff
+    classDef json fill:#48bb78,stroke:#276749,color:#fff
+    classDef atomese fill:#ed8936,stroke:#c05621,color:#fff
+
+    class APL_HTML,UIA_FILES source
+    class GEN_PAT,GEN_ARCH,GEN_OCG,GEN_ENH generator
+    class MD_APL,MD_UIA,MD_ARC markdown
+    class PAT_JSON,ARCH_JSON,SEQ_JSON,CAT_JSON json
+    class PAT_SCM,ENH_SCM,META_SCM atomese

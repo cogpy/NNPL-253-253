@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  A Pattern Language - Patterns 1-7: Regional Policies
+  AIML Implementation for Pattern Matching and Navigation
+
+  Sequence 2: Regional Policies
+  Emergent Phenomenon: Balanced distribution of settlements that
+  preserves countryside while supporting urban vitality
+-->
+<aiml version="2.0">
+
+<!-- ============================================================
+     TOPIC: TOWNS (Patterns 1-94)
+     ============================================================ -->
+<topic name="TOWNS">
+
+  <!-- ========== PATTERN 1: INDEPENDENT REGIONS ========== -->
+  <category>
+    <pattern>INDEPENDENT REGIONS</pattern>
+    <template>
+      <think>
+        <set name="current_pattern">1</set>
+        <set name="pattern_name">INDEPENDENT REGIONS</set>
+        <set name="confidence">2</set>
+      </think>
+      <b>Pattern 1: INDEPENDENT REGIONS **</b>
+
+      <b>Problem:</b> Metropolitan regions will not come to balance until each one
+      is small and autonomous enough to be an independent sphere of culture.
+
+      <b>Solution:</b> Work toward the evolution of independent regions in the world;
+      each with a population between 2 and 10 million; each with its own natural
+      and geographic boundaries; each with its own economy; each one autonomous
+      and self-governing; each with a seat in a world government.
+
+      <b>Key Numbers:</b> 2-10 million people per region, ~1000 regions worldwide
+
+      <condition name="show_connections" value="true">
+        <b>Following Patterns:</b>
+        <srai>LIST FOLLOWING PATTERNS 1</srai>
+      </condition>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* INDEPENDENT REGION *</pattern>
+    <template><srai>INDEPENDENT REGIONS</srai></template>
+  </category>
+
+  <category>
+    <pattern>PATTERN 1</pattern>
+    <template><srai>INDEPENDENT REGIONS</srai></template>
+  </category>
+
+  <!-- ========== PATTERN 2: DISTRIBUTION OF TOWNS ========== -->
+  <category>
+    <pattern>DISTRIBUTION OF TOWNS</pattern>
+    <template>
+      <think>
+        <set name="current_pattern">2</set>
+        <set name="pattern_name">DISTRIBUTION OF TOWNS</set>
+        <set name="confidence">1</set>
+      </think>
+      <b>Pattern 2: THE DISTRIBUTION OF TOWNS *</b>
+
+      <b>Problem:</b> If the population of a region is weighted too far toward
+      small villages, modern civilization can never emerge; but if weighted too
+      far toward big cities, the earth will go to ruin.
+
+      <b>Solution:</b> Encourage a birth and death process for towns which creates:
+      1. Population evenly distributed by size (logarithmic):
+         - 1 town of 1,000,000
+         - 10 towns of 100,000
+         - 100 towns of 10,000
+         - 1000 towns of 1,000
+      2. Towns homogeneously distributed across the region.
+
+      <b>Key Distances:</b>
+      - 1M towns: 250 miles apart
+      - 100K towns: 80 miles apart
+      - 10K towns: 25 miles apart
+      - 1K towns: 8 miles apart
+
+      <condition name="show_connections" value="true">
+        <b>Preceding:</b> <srai>PATTERN NAME 1</srai>
+        <b>Following:</b> <srai>LIST FOLLOWING PATTERNS 2</srai>
+      </condition>
+    </template>
+  </category>
+
+  <category>
+    <pattern>PATTERN 2</pattern>
+    <template><srai>DISTRIBUTION OF TOWNS</srai></template>
+  </category>
+
+  <!-- ========== PATTERN 3: CITY COUNTRY FINGERS ========== -->
+  <category>
+    <pattern>CITY COUNTRY FINGERS</pattern>
+    <template>
+      <think>
+        <set name="current_pattern">3</set>
+        <set name="pattern_name">CITY COUNTRY FINGERS</set>
+        <set name="confidence">2</set>
+      </think>
+      <b>Pattern 3: CITY COUNTRY FINGERS **</b>
+
+      <b>Problem:</b> Continuous sprawling urbanization destroys life, and makes
+      cities unbearable. But the sheer size of cities is also valuable and potent.
+
+      <b>Solution:</b> Keep interlocking fingers of farmland and urban land, even
+      at the center of the metropolis.
+      - Urban fingers: never more than 1 mile wide
+      - Farmland fingers: never less than 1 mile wide
+
+      <b>Key Insight:</b> Everyone should be within 10 minutes' walk of countryside.
+
+      <condition name="show_connections" value="true">
+        <b>Preceding:</b> <srai>PATTERN NAME 2</srai>
+        <b>Following:</b> <srai>LIST FOLLOWING PATTERNS 3</srai>
+      </condition>
+    </template>
+  </category>
+
+  <category>
+    <pattern>PATTERN 3</pattern>
+    <template><srai>CITY COUNTRY FINGERS</srai></template>
+  </category>
+
+  <category>
+    <pattern>* CITY AND COUNTRY *</pattern>
+    <template><srai>CITY COUNTRY FINGERS</srai></template>
+  </category>
+
+  <!-- ========== PATTERN 4: AGRICULTURAL VALLEYS ========== -->
+  <category>
+    <pattern>AGRICULTURAL VALLEYS</pattern>
+    <template>
+      <think>
+        <set name="current_pattern">4</set>
+        <set name="pattern_name">AGRICULTURAL VALLEYS</set>
+        <set name="confidence">2</set>
+      </think>
+      <b>Pattern 4: AGRICULTURAL VALLEYS **</b>
+
+      <b>Problem:</b> The land which is best for agriculture happens to be best
+      for building too. But it is limited and once destroyed, it cannot be
+      regained for centuries.
+
+      <b>Solution:</b> Preserve all agricultural valleys as farmland and protect
+      this land from any development which would destroy or lock up the unique
+      fertility of the soil. Even when valleys are not cultivated now, protect
+      them: keep them for farms and parks and wilds.
+
+      <b>Implementation:</b> Build on hillsides and plateaus, leaving valleys clear.
+
+      <condition name="show_connections" value="true">
+        <b>Preceding:</b> <srai>PATTERN NAME 1</srai>, <srai>PATTERN NAME 3</srai>
+        <b>Following:</b> <srai>LIST FOLLOWING PATTERNS 4</srai>
+      </condition>
+    </template>
+  </category>
+
+  <category>
+    <pattern>PATTERN 4</pattern>
+    <template><srai>AGRICULTURAL VALLEYS</srai></template>
+  </category>
+
+  <category>
+    <pattern>VALLEYS</pattern>
+    <template><srai>AGRICULTURAL VALLEYS</srai></template>
+  </category>
+
+  <!-- ========== PATTERN 5: LACE OF COUNTRY STREETS ========== -->
+  <category>
+    <pattern>LACE OF COUNTRY STREETS</pattern>
+    <template>
+      <think>
+        <set name="current_pattern">5</set>
+        <set name="pattern_name">LACE OF COUNTRY STREETS</set>
+        <set name="confidence">1</set>
+      </think>
+      <b>Pattern 5: LACE OF COUNTRY STREETS *</b>
+
+      <b>Problem:</b> The suburb is an obsolete and contradictory form of
+      human settlement.
+
+      <b>Solution:</b> In the zone where city and country meet:
+      - Place country roads at least 1 mile apart
+      - Enclose squares of countryside at least 1 square mile
+      - Build homesteads along roads, one lot deep
+      - Minimum lot size: half an acre
+      - Open countryside behind the houses
+
+      <b>Key Numbers:</b> ~400 households per square mile, ~1600 people
+
+      <condition name="show_connections" value="true">
+        <b>Preceding:</b> <srai>PATTERN NAME 3</srai>
+        <b>Following:</b> <srai>LIST FOLLOWING PATTERNS 5</srai>
+      </condition>
+    </template>
+  </category>
+
+  <category>
+    <pattern>PATTERN 5</pattern>
+    <template><srai>LACE OF COUNTRY STREETS</srai></template>
+  </category>
+
+  <category>
+    <pattern>COUNTRY STREETS</pattern>
+    <template><srai>LACE OF COUNTRY STREETS</srai></template>
+  </category>
+
+  <!-- ========== PATTERN 6: COUNTRY TOWNS ========== -->
+  <category>
+    <pattern>COUNTRY TOWNS</pattern>
+    <template>
+      <think>
+        <set name="current_pattern">6</set>
+        <set name="pattern_name">COUNTRY TOWNS</set>
+        <set name="confidence">2</set>
+      </think>
+      <b>Pattern 6: COUNTRY TOWNS **</b>
+
+      <b>Problem:</b> Small country towns are dying as economic gravity pulls
+      jobs and people toward the largest cities.
+
+      <b>Solution:</b> Encourage the growth of self-sufficient country towns:
+      - Population around 7,000 (see Pattern 12)
+      - Local industry and economic base
+      - Located 10-15 miles from major cities
+      - Surrounded by protected countryside
+      - Connected to but independent from urban centers
+
+      <b>Implementation:</b> Regional policies, land grants, industry incentives.
+
+      <condition name="show_connections" value="true">
+        <b>Preceding:</b> <srai>PATTERN NAME 2</srai>
+        <b>Following:</b> <srai>LIST FOLLOWING PATTERNS 6</srai>
+      </condition>
+    </template>
+  </category>
+
+  <category>
+    <pattern>PATTERN 6</pattern>
+    <template><srai>COUNTRY TOWNS</srai></template>
+  </category>
+
+  <!-- ========== PATTERN 7: THE COUNTRYSIDE ========== -->
+  <category>
+    <pattern>THE COUNTRYSIDE</pattern>
+    <template>
+      <think>
+        <set name="current_pattern">7</set>
+        <set name="pattern_name">THE COUNTRYSIDE</set>
+        <set name="confidence">1</set>
+      </think>
+      <b>Pattern 7: THE COUNTRYSIDE *</b>
+
+      <b>Problem:</b> The countryside is increasingly inaccessible to city
+      dwellers, and private ownership blocks public access to the land.
+
+      <b>Solution:</b> Make the countryside truly public:
+      - Footpaths and trails across private land
+      - Common land for community use
+      - Access rights not blocked by ownership
+      - Treat land ownership as stewardship
+      - Ecological responsibility for all landowners
+
+      <b>Key Principle:</b> The land belongs to everyone; ownership is stewardship.
+
+      <condition name="show_connections" value="true">
+        <b>Preceding:</b> <srai>PATTERN NAME 2</srai>, <srai>PATTERN NAME 3</srai>,
+        <srai>PATTERN NAME 4</srai>, <srai>PATTERN NAME 5</srai>, <srai>PATTERN NAME 6</srai>
+        <b>Following:</b> HOUSE CLUSTER (37), GREEN STREETS (51)
+      </condition>
+    </template>
+  </category>
+
+  <category>
+    <pattern>PATTERN 7</pattern>
+    <template><srai>THE COUNTRYSIDE</srai></template>
+  </category>
+
+  <category>
+    <pattern>COUNTRYSIDE</pattern>
+    <template><srai>THE COUNTRYSIDE</srai></template>
+  </category>
+
+  <!-- ========== HELPER CATEGORIES ========== -->
+
+  <!-- Pattern Name Lookup -->
+  <category>
+    <pattern>PATTERN NAME 1</pattern>
+    <template>INDEPENDENT REGIONS (1)</template>
+  </category>
+  <category>
+    <pattern>PATTERN NAME 2</pattern>
+    <template>DISTRIBUTION OF TOWNS (2)</template>
+  </category>
+  <category>
+    <pattern>PATTERN NAME 3</pattern>
+    <template>CITY COUNTRY FINGERS (3)</template>
+  </category>
+  <category>
+    <pattern>PATTERN NAME 4</pattern>
+    <template>AGRICULTURAL VALLEYS (4)</template>
+  </category>
+  <category>
+    <pattern>PATTERN NAME 5</pattern>
+    <template>LACE OF COUNTRY STREETS (5)</template>
+  </category>
+  <category>
+    <pattern>PATTERN NAME 6</pattern>
+    <template>COUNTRY TOWNS (6)</template>
+  </category>
+  <category>
+    <pattern>PATTERN NAME 7</pattern>
+    <template>THE COUNTRYSIDE (7)</template>
+  </category>
+
+  <!-- Following Patterns Lists -->
+  <category>
+    <pattern>LIST FOLLOWING PATTERNS 1</pattern>
+    <template>DISTRIBUTION OF TOWNS (2), MOSAIC OF SUBCULTURES (8)</template>
+  </category>
+  <category>
+    <pattern>LIST FOLLOWING PATTERNS 2</pattern>
+    <template>CITY COUNTRY FINGERS (3), AGRICULTURAL VALLEYS (4), COUNTRY TOWNS (6)</template>
+  </category>
+  <category>
+    <pattern>LIST FOLLOWING PATTERNS 3</pattern>
+    <template>AGRICULTURAL VALLEYS (4), MOSAIC OF SUBCULTURES (8), LACE OF COUNTRY STREETS (5)</template>
+  </category>
+  <category>
+    <pattern>LIST FOLLOWING PATTERNS 4</pattern>
+    <template>THE COUNTRYSIDE (7)</template>
+  </category>
+  <category>
+    <pattern>LIST FOLLOWING PATTERNS 5</pattern>
+    <template>THE COUNTRYSIDE (7), IDENTIFIABLE NEIGHBORHOODS (14), HOUSE CLUSTER (37)</template>
+  </category>
+  <category>
+    <pattern>LIST FOLLOWING PATTERNS 6</pattern>
+    <template>COMMUNITY OF 7000 (12), LIFE CYCLE (26), THE COUNTRYSIDE (7)</template>
+  </category>
+  <category>
+    <pattern>LIST FOLLOWING PATTERNS 7</pattern>
+    <template>HOUSE CLUSTER (37), GREEN STREETS (51)</template>
+  </category>
+
+  <!-- Sequence Navigation -->
+  <category>
+    <pattern>SEQUENCE 2</pattern>
+    <template>
+      <think><set name="show_connections">true</set></think>
+      <b>Sequence 2: Regional Policies</b>
+
+      This sequence focuses on the balanced distribution of settlements.
+
+      <b>Patterns in sequence:</b>
+      1. <srai>PATTERN NAME 2</srai>
+      2. <srai>PATTERN NAME 3</srai>
+      3. <srai>PATTERN NAME 4</srai>
+      4. <srai>PATTERN NAME 5</srai>
+      5. <srai>PATTERN NAME 6</srai>
+      6. <srai>PATTERN NAME 7</srai>
+
+      <b>Emergent Phenomenon:</b> Balanced distribution of settlements that
+      preserves countryside while supporting urban vitality.
+
+      Say a pattern name to explore it.
+    </template>
+  </category>
+
+  <category>
+    <pattern>REGIONAL POLICIES</pattern>
+    <template><srai>SEQUENCE 2</srai></template>
+  </category>
+
+  <!-- Problem-Focused Queries -->
+  <category>
+    <pattern>* SPRAWL *</pattern>
+    <template>
+      For problems with urban sprawl, see:
+      <srai>CITY COUNTRY FINGERS</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* FARMLAND *</pattern>
+    <template>
+      For protecting farmland, see:
+      <srai>AGRICULTURAL VALLEYS</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* SUBURB *</pattern>
+    <template>
+      For alternatives to suburbs, see:
+      <srai>LACE OF COUNTRY STREETS</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* ACCESS TO NATURE *</pattern>
+    <template>
+      For public access to nature, see:
+      <srai>THE COUNTRYSIDE</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* SMALL TOWN *</pattern>
+    <template>
+      For sustaining small towns, see:
+      <srai>COUNTRY TOWNS</srai>
+    </template>
+  </category>
+
+</topic>
+
+<!-- ============================================================
+     GLOBAL PATTERNS (accessible from any topic)
+     ============================================================ -->
+
+<category>
+  <pattern>HELP</pattern>
+  <template>
+    <b>A Pattern Language Navigator</b>
+
+    Available commands:
+    - Say a pattern name: "INDEPENDENT REGIONS", "CITY COUNTRY FINGERS"
+    - Say a pattern number: "PATTERN 1", "PATTERN 7"
+    - Navigate sequences: "SEQUENCE 2", "REGIONAL POLICIES"
+    - Ask about problems: "sprawl", "farmland", "suburbs"
+
+    Patterns 1-7 cover regional policies for balancing city and countryside.
+  </template>
+</category>
+
+<category>
+  <pattern>START</pattern>
+  <template>
+    <think><set name="topic">TOWNS</set></think>
+    Welcome to A Pattern Language, Patterns 1-7: Regional Policies.
+
+    <srai>SEQUENCE 2</srai>
+  </template>
+</category>
+
+</aiml>

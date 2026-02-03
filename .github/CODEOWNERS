@@ -1,0 +1,109 @@
+# CODEOWNERS - Countryside Stewardship Enforcement
+# Part of Pattern 7 (THE COUNTRYSIDE) implementation
+#
+# This file defines ownership and review requirements for protected areas
+# of the repository, implementing stewardship responsibilities.
+#
+# See: COUNTRYSIDE_STEWARDSHIP.md for complete policies
+
+# ==============================================================================
+# PROTECTED VALLEYS (Read-Only Source Commons)
+# ==============================================================================
+# Only maintainers can modify these directories
+# All PRs touching these require maintainer review and approval
+
+# apl/ valley - Christopher Alexander's Original Patterns
+/apl/                           @CODEOWNERS-TEAM
+
+# uia/ valley - UIA Organizational Patterns
+/uia/                           @CODEOWNERS-TEAM
+
+# ==============================================================================
+# GENERATED COMMONS (Regenerable Shared Resources)
+# ==============================================================================
+# JSON files should be generated, not hand-edited
+# PRs modifying these should include corresponding generator changes
+
+# Core JSON Commons
+/*.json                         @CODEOWNERS-TEAM
+
+# Pattern directory (generated content)
+/pattern/                       @CODEOWNERS-TEAM
+
+# ==============================================================================
+# STEWARDSHIP DOCUMENTATION
+# ==============================================================================
+# Changes to stewardship policies require careful review
+
+/COUNTRYSIDE_STEWARDSHIP.md     @CODEOWNERS-TEAM
+/THE_COUNTRYSIDE.md             @CODEOWNERS-TEAM
+/COUNTRYSIDE_ACCESS_GUIDE.md    @CODEOWNERS-TEAM
+
+# ==============================================================================
+# STEWARDSHIP SCRIPTS
+# ==============================================================================
+# Critical infrastructure for maintaining the commons
+
+/verify_countryside_health.sh   @CODEOWNERS-TEAM
+/regenerate_commons.sh          @CODEOWNERS-TEAM
+
+# ==============================================================================
+# GENERATION SCRIPTS
+# ==============================================================================
+# These affect generated commons, so changes need review
+
+/generate_pattern_schema.py     @CODEOWNERS-TEAM
+/generate_archetypal_patterns.py @CODEOWNERS-TEAM
+/generate_uia_pattern_list.py   @CODEOWNERS-TEAM
+
+# Validation scripts
+/validate_schema.py             @CODEOWNERS-TEAM
+/test_pattern_api.py            @CODEOWNERS-TEAM
+
+# ==============================================================================
+# NOTES FOR CONTRIBUTORS
+# ==============================================================================
+#
+# If you need to modify files in protected areas:
+#
+# 1. For valley sources (apl/, uia/):
+#    - File an issue explaining why modification is needed
+#    - Discuss with maintainers first
+#    - Modifications are rare and require strong justification
+#
+# 2. For JSON commons:
+#    - Don't hand-edit JSON files
+#    - Improve the generator scripts instead
+#    - PRs should include generator changes + regenerated JSON
+#
+# 3. For generation scripts:
+#    - Include tests demonstrating the fix/improvement
+#    - Regenerate JSON and include in PR
+#    - Document what changed and why
+#
+# 4. For stewardship docs:
+#    - Propose changes via issue first
+#    - Include rationale for policy change
+#    - Consider impact on existing practices
+#
+# See COUNTRYSIDE_ACCESS_GUIDE.md for how to use the commons properly.
+#
+# ==============================================================================
+
+# Default owners for everything else (less strict)
+*                               @CONTRIBUTORS-TEAM
+
+# Regional implementations can be modified more freely
+/npu253/                        @CONTRIBUTORS-TEAM
+/skill_framework/               @CONTRIBUTORS-TEAM
+/opencog_atomese/               @CONTRIBUTORS-TEAM
+/markdown/                      @CONTRIBUTORS-TEAM
+/implementations/               @CONTRIBUTORS-TEAM
+
+# Documentation (non-stewardship) can be freely improved
+*.md                            @CONTRIBUTORS-TEAM
+
+# But re-enforce protection on stewardship docs
+/COUNTRYSIDE_STEWARDSHIP.md     @CODEOWNERS-TEAM
+/THE_COUNTRYSIDE.md             @CODEOWNERS-TEAM
+/COUNTRYSIDE_ACCESS_GUIDE.md    @CODEOWNERS-TEAM

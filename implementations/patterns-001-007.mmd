@@ -1,0 +1,81 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#4299e1', 'primaryTextColor': '#fff', 'primaryBorderColor': '#2b6cb0', 'lineColor': '#718096'}}}%%
+flowchart TB
+    subgraph SEQUENCE_2["Sequence 2: Regional Policies"]
+        direction TB
+
+        subgraph P1["Pattern 1: INDEPENDENT REGIONS **"]
+            P1_PROB["Problem: Metropolitan regions won't balance<br/>until each is small and autonomous"]
+            P1_SOL["Solution: Work toward independent regions<br/>2-10 million people each<br/>with own economy & government"]
+            P1_PROB --> P1_SOL
+        end
+
+        subgraph P2["Pattern 2: DISTRIBUTION OF TOWNS *"]
+            P2_PROB["Problem: Population weighted to cities<br/>ruins earth; too rural blocks civilization"]
+            P2_SOL["Solution: Logarithmic distribution<br/>1M→10 towns of 100K→100 of 10K→1000 of 1K<br/>evenly spread across region"]
+            P2_PROB --> P2_SOL
+        end
+
+        subgraph P3["Pattern 3: CITY COUNTRY FINGERS **"]
+            P3_PROB["Problem: Sprawl destroys life<br/>but city size is valuable"]
+            P3_SOL["Solution: Interlocking fingers<br/>Urban fingers ≤1 mile wide<br/>Farm fingers ≥1 mile wide"]
+            P3_PROB --> P3_SOL
+        end
+
+        subgraph P4["Pattern 4: AGRICULTURAL VALLEYS **"]
+            P4_PROB["Problem: Best farmland = best building land<br/>Once destroyed, gone for centuries"]
+            P4_SOL["Solution: Preserve all valleys<br/>as farmland, parks, wilds<br/>Build on hillsides instead"]
+            P4_PROB --> P4_SOL
+        end
+
+        subgraph P5["Pattern 5: LACE OF COUNTRY STREETS *"]
+            P5_PROB["Problem: Suburbs are obsolete<br/>and contradictory"]
+            P5_SOL["Solution: Country roads 1 mile apart<br/>enclosing 1 sq mile farmland<br/>Homesteads one lot deep"]
+            P5_PROB --> P5_SOL
+        end
+
+        subgraph P6["Pattern 6: COUNTRY TOWNS **"]
+            P6_PROB["Problem: Small towns dying<br/>as jobs move to cities"]
+            P6_SOL["Solution: Encourage self-sufficient towns<br/>7000 people with local industry<br/>10-15 miles from cities"]
+            P6_PROB --> P6_SOL
+        end
+
+        subgraph P7["Pattern 7: THE COUNTRYSIDE *"]
+            P7_PROB["Problem: Countryside inaccessible<br/>to city dwellers"]
+            P7_SOL["Solution: Make countryside public<br/>Footpaths, commons, access rights<br/>Stewardship not ownership"]
+            P7_PROB --> P7_SOL
+        end
+    end
+
+    %% Relationships
+    P1 -->|"contains"| P2
+    P2 -->|"balanced by"| P3
+    P3 -->|"protected by"| P4
+    P4 -->|"structured by"| P5
+    P2 -->|"supported by"| P6
+    P5 -->|"opens to"| P7
+    P6 -->|"surrounded by"| P7
+    P3 -->|"alternates with"| P7
+
+    subgraph EMERGENCE["Emergent Phenomenon"]
+        EM["Balanced distribution of settlements<br/>that preserves countryside<br/>while supporting urban vitality"]
+    end
+
+    P1 & P2 & P3 & P4 & P5 & P6 & P7 -.->|"synergy creates"| EM
+
+    subgraph LEGEND["Legend"]
+        L1["** = True invariant (high confidence)"]
+        L2["* = Progress made (medium confidence)"]
+        L3["no asterisk = Uncertain (hypothesis)"]
+    end
+
+    classDef pattern fill:#4299e1,stroke:#2b6cb0,color:#fff
+    classDef problem fill:#e53e3e,stroke:#c53030,color:#fff
+    classDef solution fill:#48bb78,stroke:#276749,color:#fff
+    classDef emergence fill:#805ad5,stroke:#553c9a,color:#fff
+    classDef legend fill:#718096,stroke:#4a5568,color:#fff
+
+    class P1,P2,P3,P4,P5,P6,P7 pattern
+    class P1_PROB,P2_PROB,P3_PROB,P4_PROB,P5_PROB,P6_PROB,P7_PROB problem
+    class P1_SOL,P2_SOL,P3_SOL,P4_SOL,P5_SOL,P6_SOL,P7_SOL solution
+    class EM,EMERGENCE emergence
+    class L1,L2,L3,LEGEND legend

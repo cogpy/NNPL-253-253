@@ -1,0 +1,43 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#4a90d9', 'primaryTextColor': '#fff', 'primaryBorderColor': '#2c5282', 'lineColor': '#718096', 'secondaryColor': '#68d391', 'tertiaryColor': '#f6e05e'}}}%%
+graph TB
+    subgraph META["Pattern Language (P-0)"]
+        P0[("Pattern Language<br/>253 Patterns")]
+    end
+
+    subgraph TOWNS["TOWNS (1-94)"]
+        direction LR
+        T1["1. Independent Regions"]
+        T12["12. Community of 7000"]
+        T94["94. Sleeping in Public"]
+    end
+
+    subgraph BUILDINGS["BUILDINGS (95-204)"]
+        direction LR
+        B95["95. Building Complex"]
+        B127["127. Intimacy Gradient"]
+        B204["204. Secret Place"]
+    end
+
+    subgraph CONSTRUCTION["CONSTRUCTION (205-253)"]
+        direction LR
+        C205["205. Structure Follows<br/>Social Spaces"]
+        C249["249. Ornament"]
+        C253["253. Things From<br/>Your Life"]
+    end
+
+    P0 --> TOWNS
+    P0 --> BUILDINGS
+    P0 --> CONSTRUCTION
+
+    TOWNS --> BUILDINGS
+    BUILDINGS --> CONSTRUCTION
+
+    classDef meta fill:#805ad5,stroke:#553c9a,color:#fff
+    classDef towns fill:#4299e1,stroke:#2b6cb0,color:#fff
+    classDef buildings fill:#48bb78,stroke:#276749,color:#fff
+    classDef construction fill:#ed8936,stroke:#c05621,color:#fff
+
+    class P0 meta
+    class T1,T12,T94 towns
+    class B95,B127,B204 buildings
+    class C205,C249,C253 construction

@@ -1,0 +1,76 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#4a90d9', 'primaryTextColor': '#fff'}}}%%
+flowchart TB
+    subgraph AIML_PATTERN["AIML Pattern Implementation"]
+        direction TB
+
+        subgraph CATEGORY["&lt;category&gt; - Pattern Container"]
+            direction TB
+
+            subgraph PATTERN_MATCH["&lt;pattern&gt; - Input Matching"]
+                PAT_TEXT["PATTERN * CONTEXT *"]
+                WILDCARDS["Wildcards: * _ # ^"]
+                SETS["&lt;set&gt;domain&lt;/set&gt;"]
+            end
+
+            subgraph THAT["&lt;that&gt; - Context Memory"]
+                PREV["Previous Response Match"]
+                CONTEXT_CHAIN["Chain: P12 → P45 → P67"]
+            end
+
+            subgraph TEMPLATE["&lt;template&gt; - Response Generation"]
+                direction TB
+
+                subgraph CONTEXT_GEN["Context Generation"]
+                    COND["&lt;condition&gt;<br/>Check preceding patterns"]
+                    THINK["&lt;think&gt;<br/>Set context variables"]
+                end
+
+                subgraph PROBLEM_GEN["Problem Articulation"]
+                    RAND["&lt;random&gt;<br/>Problem variations"]
+                    STAR["&lt;star/&gt;<br/>Captured wildcards"]
+                end
+
+                subgraph SOLUTION_GEN["Solution Response"]
+                    SRAI["&lt;srai&gt;<br/>Recursive pattern call"]
+                    LEARN["&lt;learn&gt;<br/>Dynamic pattern creation"]
+                end
+
+                subgraph CONNECTION_GEN["Connection Links"]
+                    GET["&lt;get name='following'/&gt;"]
+                    SET["&lt;set name='current'&gt;P127&lt;/set&gt;"]
+                end
+            end
+        end
+
+        subgraph TOPIC["&lt;topic&gt; - Category Scope"]
+            T_TOWNS["TOWNS"]
+            T_BLDG["BUILDINGS"]
+            T_CONST["CONSTRUCTION"]
+        end
+    end
+
+    PATTERN_MATCH --> THAT
+    THAT --> TEMPLATE
+    CONTEXT_GEN --> PROBLEM_GEN --> SOLUTION_GEN --> CONNECTION_GEN
+    TOPIC -.->|scopes| CATEGORY
+
+    subgraph AIML_EXAMPLE["Example: Intimacy Gradient (P127)"]
+        EX_CAT["&lt;category&gt;"]
+        EX_PAT["&lt;pattern&gt;INTIMACY GRADIENT *&lt;/pattern&gt;"]
+        EX_THAT["&lt;that&gt;BUILDING COMPLEX&lt;/that&gt;"]
+        EX_TEMP["&lt;template&gt;<br/>&lt;think&gt;&lt;set name='current'&gt;127&lt;/set&gt;&lt;/think&gt;<br/>Layout spaces in a sequence from public to private...<br/>&lt;srai&gt;COMMON AREAS&lt;/srai&gt;<br/>&lt;/template&gt;"]
+
+        EX_CAT --> EX_PAT --> EX_THAT --> EX_TEMP
+    end
+
+    classDef category fill:#805ad5,stroke:#553c9a,color:#fff
+    classDef pattern fill:#4299e1,stroke:#2b6cb0,color:#fff
+    classDef template fill:#48bb78,stroke:#276749,color:#fff
+    classDef topic fill:#ed8936,stroke:#c05621,color:#fff
+    classDef example fill:#718096,stroke:#4a5568,color:#fff
+
+    class CATEGORY category
+    class PATTERN_MATCH,THAT pattern
+    class TEMPLATE,CONTEXT_GEN,PROBLEM_GEN,SOLUTION_GEN,CONNECTION_GEN template
+    class TOPIC,T_TOWNS,T_BLDG,T_CONST topic
+    class EX_CAT,EX_PAT,EX_THAT,EX_TEMP example
