@@ -1,6 +1,6 @@
 # Navigation Hub: Pattern Language Explorer
 
-> **Terminology Update**: The domain previously labeled "Individual" or "Interpersonal" is now called "**Individual**" (consciousness/awareness/mental patterns).
+> **Terminology Update**: The domain previously labeled "Psychic" or "Interpersonal" is now called "**Individual**" (consciousness/awareness/mental patterns).
 
 > **Pattern 28: ECCENTRIC NUCLEUS** - Multiple entry points for exploring the pattern language
 
