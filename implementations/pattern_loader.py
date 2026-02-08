@@ -143,13 +143,15 @@ class PatternLoader:
             
             # Try to find inline marker
             idx = content_lower.find(marker_lower)
-            if idx >= 0:
-                # Get text after marker
-                remaining = content[idx + len(marker):]
-                # Skip to next paragraph
-                match = re.search(r'\n\n(.+?)(?:\n\n|\Z)', remaining, re.DOTALL)
-                if match:
-                    return match.group(1).strip()
+            if idx < 0:
+                continue
+                
+            # Get text after marker
+            remaining = content[idx + len(marker):]
+            # Skip to next paragraph
+            match = re.search(r'\n\n(.+?)(?:\n\n|\Z)', remaining, re.DOTALL)
+            if match:
+                return match.group(1).strip()
         
         return ""
     

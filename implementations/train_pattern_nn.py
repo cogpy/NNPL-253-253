@@ -253,7 +253,7 @@ def main():
     
     # Training loop
     print("\n=== Training ===")
-    num_epochs = 10
+    num_epochs = 10  # Can be adjusted via command line in future versions
     best_val_acc = 0.0
     
     for epoch in range(num_epochs):

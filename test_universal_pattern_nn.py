@@ -50,8 +50,10 @@ def test_pattern_loader():
     
     # Test relationships
     pattern2 = patterns[2]
-    assert 3 in pattern2.following or len(pattern2.following) == 0, "Pattern 2 should have following patterns"
-    print("✓ Pattern relationships loaded")
+    # Pattern 2 should have pattern 3 as a following pattern
+    if pattern2.following:
+        assert 3 in pattern2.following, f"Pattern 2 should have pattern 3 in following list, got {pattern2.following}"
+        print("✓ Pattern relationships loaded correctly")
     
     return patterns
 
